@@ -20,7 +20,7 @@ const Project1 = () => {
             <Link to='https://github.com/rominamarmontel/numberGame' target="_blank" rel="noopener noreferrer"><FaGithub /></Link>
           </div>
         </div>
-        <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408712/portfolio/216149858-deaa521f-1e9e-485e-8840-5633e1d4e3fa_uayvmp.png' alt='' />
+        <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693498437/portfolio/216149858-deaa521f-1e9e-485e-8840-5633e1d4e3fa_wjcnpp.png' alt='' />
         <div className={styles.textIntro}>
           <h3 className={styles.subtitle}>TECHNOLOGIE</h3>
           JavaScript, HTML, CSS
