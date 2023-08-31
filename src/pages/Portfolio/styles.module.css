@@ -1,0 +1,181 @@
+.Portfolio {
+  width: 100%;
+  height: auto;
+}
+.Portfolio h2, .About h2 {
+  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  font-size: 48px;
+  line-height: 1.3em;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+.intro {
+  height: auto;
+  background-size:  cover; 
+  background-image: url('https://res.cloudinary.com/dyu65fpse/image/upload/v1693404330/portfolio/DSCN0420_idgvop.jpg');
+  background-repeat:  no-repeat;    
+}
+.layer {
+  padding-top: 20vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 0 auto;
+}
+.layertxt {
+  text-shadow: 1px 1px 4px rgba(0,0,0,1);
+  color: #fff;
+  letter-spacing: 0.2rem;
+  background-color: #ffffff58;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 20vh;
+  letter-spacing: 0.1em;
+}
+.textEnglish {
+  color:#edb55a;
+}
+.sectionContainer {
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+.works {
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.works h2, .contact h2 {
+  color: #333333;
+}
+.about h2 {
+  color: white;
+}
+.worksbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.work {
+  position: relative;
+  margin: 20px;
+}
+.work img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+.work > h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fafafab1;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 2em;
+  width: 350px;
+  color:#000000;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.work > h4 > span {
+  font-size: .5em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+.about {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #333333;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.skills span {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #8c8c8c;
+  text-shadow: 1px 1px 4px rgba(0,0,0,1);
+}
+.aboutbox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.aboutbox > div {
+  width: 50%;
+}
+.aboutbox img {
+  width: 100%;
+}
+.abouttext {
+  padding-right: 50px;
+  color: #ffffff;
+}
+.contact {
+  margin-bottom: 200px;
+}
+.contactText {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .layer {
+    padding-top: 20vh;
+    width: 100%;
+  }
+  .layertxt {
+    background-color:unset;
+    padding-top: 0px;
+    margin-bottom: 0vh;
+  }
+  .aboutbox > div {
+    width: 100%;
+  }
+  .aboutbox img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .aboutbox {
+    display: flex;
+    flex-direction: column;
+  }
+  .abouttext {
+    padding-right: unset;
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .sectionContainer {
+    width: 90%;
+  }
+  .layer {
+    padding-top: 20vh;
+    width: 100%;
+  }
+  .layertxt {
+    background-color:unset;
+    margin-bottom: 10vh;
+    padding-right:unset;
+    padding-left:unset;
+    width: 90%;
+  }
+  .work img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  }
+}
+@media (max-width: 720px) {}

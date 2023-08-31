@@ -1,0 +1,88 @@
+.Muun {
+  width: 100vw;
+  height: auto;
+}
+.container {
+  padding-top: 200px;
+  width: 80%;
+  margin: 0 auto;
+}
+.Muun img {
+  width: 100%;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title h2 {
+  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+.title > div:first-child {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+.title > div > p {
+  font-size: .8em;
+}
+.sns {
+  display: flex;
+  font-size: 1.3em;
+  gap: 10px;
+}
+.sns svg {
+  color: black;
+}
+.sns svg:hover {
+  color: gray;
+}
+.textEnglish {
+  color: rgb(236, 158, 14);
+}
+.textIntro {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.serviceBox:nth-child(odd) {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 100px;
+  align-items: center;
+}
+.serviceBox:nth-child(even) {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.serviceBox > div {
+  width: 50%;
+  margin-bottom: 100px;
+  align-content: center;
+}
+.serviceBox > div > img {
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 510px) {}
+@media screen and (max-width: 992px) {
+  .container {
+    padding-top: 100px;
+    width: 90%;
+  }
+  .serviceBox:nth-child(odd) {
+    display: unset;
+    flex-direction: unset;
+    gap: unset;
+    align-items: unset;
+  }
+  .serviceBox:nth-child(even) {
+    display: unset;
+    gap: unset;
+    align-items: unset;
+  }
+  .serviceBox > div {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
