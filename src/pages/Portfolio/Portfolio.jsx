@@ -6,6 +6,7 @@ const Portfolio = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   })
+
   return (
     <div className={styles.Portfolio}>
       <div className={styles.container}>
@@ -44,7 +45,7 @@ const Portfolio = () => {
             <div className={styles.worksbox}>
               <Link to='/muun'>
                 <div className={styles.work}>
-                  <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693410505/portfolio/Screenshot_2023-08-30_at_17.48.06_yifnhr.png' alt='impermanencefilms' />
+                  <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693410505/portfolio/Screenshot_2023-08-30_at_17.48.06_yifnhr.png' alt='muun' />
                   <h4>EC site<br />
                     <span>Aout - Sep 2023</span></h4>
                 </div>
@@ -58,14 +59,14 @@ const Portfolio = () => {
               </Link>
               <Link to='/kanraku'>
                 <div className={styles.work}>
-                  <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693496603/portfolio/247885359-e249cde4-af45-4051-8426-edf21bc77785_1_1_u49f86.png' alt='impermanencefilms' />
+                  <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693496603/portfolio/247885359-e249cde4-af45-4051-8426-edf21bc77785_1_1_u49f86.png' alt='kanraku' />
                   <h4>EC site<br />
                     <span>Mars 2023</span></h4>
                 </div>
               </Link>
               <Link to='/project2'>
                 <div className={styles.work}>
-                  <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408714/portfolio/247888287-aee68f84-6d60-4d20-a8ef-9d061462254d_1_veyqpx.png' alt='impermanencefilms' />
+                  <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408714/portfolio/247888287-aee68f84-6d60-4d20-a8ef-9d061462254d_1_veyqpx.png' alt='exquisite' />
                   <h4>Web application<br />
                     <span>Feb 2023</span></h4>
                 </div>
