@@ -4,12 +4,11 @@
   height: 80px;
   line-height: 80px;
   color: black;
-  font-size: 6em;
+  font-size: 4.8em;
   font-weight: 800;
   will-change: transform, opacity;
   overflow: hidden;
 }
-
 .trailsText > div {
   padding-right: 0.05em;
   overflow: hidden;

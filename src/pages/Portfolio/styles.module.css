@@ -72,12 +72,17 @@
 .work {
   position: relative;
   margin: 20px;
+  background: #000;
 }
 .work img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+.work img:hover {
+  opacity: .8;
+  transition: ease 0.3s;
 }
 .work > h4 {
   position: absolute;
@@ -92,6 +97,9 @@
   color:#000000;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.work > h4:hover {
+  background-color: #ffffff;
 }
 .work > h4 > span {
   font-size: .5em;

@@ -115,7 +115,7 @@ const Portfolio = () => {
           <div className={styles.sectionContainer}>
             <h2>Contact</h2>
             <div className={styles.contactText}>
-              <p>Je parle Français Japonais et Anglais</p>
+              <p>Merci de me contacter,</p>
               <p>Email : romi.varnier (a) gmail.com</p><p>
                 Mobile : 06 26 61 98 05</p>
             </div>

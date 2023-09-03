@@ -8,15 +8,17 @@ const Layout = () => {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Outlet />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <div className='wrapper'>
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Outlet />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
     </>
   );
 };

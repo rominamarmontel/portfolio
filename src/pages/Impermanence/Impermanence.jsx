@@ -6,7 +6,7 @@ import { SlLink } from 'react-icons/sl'
 
 const Impermanence = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   })
   return (
     <div className={styles.Impermanence}>

@@ -11,6 +11,7 @@ import {
 
 const Header = () => {
   const y = useAnimatedValue(0, { immediate: true });
+
   useScroll(({ scrollY }) => {
     y.value = scrollY;
   });
@@ -35,20 +36,21 @@ const Header = () => {
         boxShadow
       }}
     >
-      <HashLink to='/portfolio#'>
+      <HashLink to='/'>
         <div className='logo'>
           <h3>H<span>I</span>ROM<span>I</span> VARN<span>I</span>ER</h3>
         </div>
       </HashLink>
       <nav>
         <ul>
+          <li><HashLink to='/portfolio#'>Top</HashLink></li>
           <li><HashLink smooth to="/portfolio#works">Works</HashLink></li>
           <li><HashLink to="/portfolio#about">About</HashLink></li>
           <li><HashLink to="#contact">Contact</HashLink></li>
           <li className='sns'><Link to='https://www.linkedin.com/in/hiromi-varnier/' target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></Link></li>
         </ul>
       </nav>
-    </AnimatedBlock>
+    </AnimatedBlock >
   )
 }
 
