@@ -18,7 +18,7 @@ const Project2 = () => {
             <p>Fev 2023 | Premier projet collaboration chez Ironhack</p>
           </div>
           <div className={styles.sns}>
-            <Link to='https://www.impermanencefilms.org/' target="_blank" rel="noopener noreferrer"><SlLink /></Link>
+            <Link to='https://exquisite-stories-x5xa.onrender.com/' target="_blank" rel="noopener noreferrer"><SlLink /></Link>
             <Link to='https://github.com/rominamarmontel/collaborative-project-rm' target="_blank" rel="noopener noreferrer"><FaGithub /></Link>
 
           </div>
