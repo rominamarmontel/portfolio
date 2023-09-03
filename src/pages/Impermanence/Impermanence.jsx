@@ -32,6 +32,7 @@ const Impermanence = () => {
             <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693496833/portfolio/247889755-ca581ffb-9bbc-4605-abf4-3ea73ee22219_1_1_etplbx.png' alt='' />
           </div>
           <div className={styles.boxText}>
+            <h3 className={styles.subtitle}>TECHNOLOGIE</h3>
             <p>NodeJS, ExpressJS, ReactJS, MongoDB, HTML, CSS, Mongoose, Postman, Cloudinary</p>
           </div>
         </div>
@@ -40,6 +41,7 @@ const Impermanence = () => {
             <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408715/portfolio/252614504-a0f5ff26-89b8-48bf-bfb7-dda1db863984_obgnyo.png' alt='' />
           </div>
           <div>
+            <h3 className={styles.subtitle}>DESCRIPTION</h3>
             <p>Résponsive, authentification pour les
               administrateurs, API, opérations CRUD, bascule avec ObjectId pour deux langues.</p>
             <p>Mettre en œuvre la fonctionnalité d'inscription et de connexion pour le panneau d'administration. J'ai essayé d'utiliser le package npm @mui/x-data-grid et j'ai essayé d'utiliser SASS au lieu de CSS pour améliorer la lisibilité de l'affichage de la liste des films.</p>

@@ -33,6 +33,7 @@ const Kanraku = () => {
             <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693496511/portfolio/247885388-897af22c-ad6c-4310-8f54-bcab1669f379_1_1_ol4uo7.png' alt='' />
           </div>
           <div className={styles.boxText}>
+            <h3 className={styles.subtitle}>TECHNOLOGIE</h3>
             <p>NodeJS, ExpressJS, ReactJS, MongoDB, HTML,
               CSS,Mongoose, Postman, Cloudinary</p>
           </div>
@@ -42,6 +43,7 @@ const Kanraku = () => {
             <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408712/portfolio/247883425-05d951c2-9429-4122-b80a-c7ca26dda2b8_w0izin.png' alt='' />
           </div>
           <div>
+            <h3 className={styles.subtitle}>DESCRIPTION</h3>
             <p>Lorsque l'utilisateur ajoute des articles au panier en spécifiant la quantité, il est invité à se connecter pour l'authentification. Après s'être connecté, les informations du panier de l'utilisateur sont affichées. La partie la plus difficile de ce projet a été de différencier entre les administrateurs, les utilisateurs réguliers et les utilisateurs connectés à des fins d'authentification. Les utilisateurs connectés peuvent effectuer diverses actions telles que la suppression ou la mise à jour de leurs profils, adresses de livraison et le contenu de leur panier grâce à des appels API.</p>
           </div>
         </div>

@@ -30,32 +30,24 @@ const Project2 = () => {
         </div>
         <div className={styles.serviceBox}>
           <div>
-            <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408715/portfolio/247889755-ca581ffb-9bbc-4605-abf4-3ea73ee22219_qtbb35.png' alt='' />
+            <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693496986/portfolio/247888287-aee68f84-6d60-4d20-a8ef-9d061462254d_1_1_1_aawdpj.png' alt='exquisite3' />
           </div>
           <div className={styles.boxText}>
+            <h3 className={styles.subtitle}>TECHNOLOGIE</h3>
             <p>NodeJs, ExpressJs, Handlebars, MongoDB, CSS</p>
           </div>
         </div>
         <div className={styles.serviceBox}>
           <div>
-            <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408715/portfolio/252614504-a0f5ff26-89b8-48bf-bfb7-dda1db863984_obgnyo.png' alt='' />
+            <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693756190/Screenshot_2023-09-03_at_17.12.47_rtctxj.png' alt='exquisite2' />
           </div>
           <div>
+            <h3 className={styles.subtitle}>DESCRIPTION</h3>
             <p>Exquisite Game with Story Creation.
               Avec des fonctionnalités de connexion et de
-              déconnexion, CRUD, création de modèles à
+              déconnexion (Middlewares authentification), CRUD, création de modèles à
               l'aide de données de démarrage (seed data),
               Handlebars pour les modèles HTML.</p>
-          </div>
-        </div>
-        <div className={styles.serviceBox}>
-          <div>
-            <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408715/portfolio/252614548-bc7ab2f0-38fd-431a-a9eb-6894d3e5fa83_zb2fle.png' alt='' />
-          </div>
-          <div>
-            <p>Site web de l'association "Impermanence Films".
-              Résponsive, authentification pour les
-              administrateurs, API, opérations CRUD, bascule avec ObjectId pour deux langues.</p>
           </div>
         </div>
       </div>

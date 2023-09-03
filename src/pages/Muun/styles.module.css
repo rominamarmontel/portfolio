@@ -37,6 +37,9 @@
 .sns svg:hover {
   color: gray;
 }
+.subtitle {
+  font-weight: 600;
+}
 .textEnglish {
   color: rgb(236, 158, 14);
 }
