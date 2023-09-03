@@ -14,7 +14,7 @@ const Muun = () => {
         <div className={styles.title}>
           <div>
             <h2>Muuñ website</h2>
-            <p>Aout - Sep 2023</p>
+            <p>Aout - Present 2023</p>
           </div>
           <div className={styles.sns}>
             <Link to='https://www.muun.fr/' target="_blank" rel="noopener noreferrer"><SlLink /></Link>

@@ -47,7 +47,7 @@ const Portfolio = () => {
                 <div className={styles.work}>
                   <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693410505/portfolio/Screenshot_2023-08-30_at_17.48.06_yifnhr.png' alt='muun' />
                   <h4>EC site<br />
-                    <span>Aout - Sep 2023</span></h4>
+                    <span>Aout - Present 2023</span></h4>
                 </div>
               </Link>
               <Link to='/impermanence'>
