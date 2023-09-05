@@ -35,6 +35,8 @@ const Project2 = () => {
           <div className={styles.boxText}>
             <h3 className={styles.subtitle}>TECHNOLOGIE</h3>
             <p>NodeJs, ExpressJs, Handlebars, MongoDB, CSS</p>
+            <h3 className={styles.subtitle}>CI/CD</h3>
+            <p>Render</p>
           </div>
         </div>
         <div className={styles.serviceBox}>

@@ -34,6 +34,8 @@ const Impermanence = () => {
           <div className={styles.boxText}>
             <h3 className={styles.subtitle}>TECHNOLOGIE</h3>
             <p>NodeJS, ExpressJS, ReactJS, MongoDB, HTML, CSS, Mongoose, Postman, Cloudinary</p>
+            <h3 className={styles.subtitle}>CI/CD</h3>
+            <p>Vercel/Render</p>
           </div>
         </div>
         <div className={styles.serviceBox}>

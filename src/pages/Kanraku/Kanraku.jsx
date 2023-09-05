@@ -36,6 +36,8 @@ const Kanraku = () => {
             <h3 className={styles.subtitle}>TECHNOLOGIE</h3>
             <p>NodeJS, ExpressJS, ReactJS, MongoDB, HTML,
               CSS,Mongoose, Postman, Cloudinary</p>
+            <h3 className={styles.subtitle}>CI/CD</h3>
+            <p>Netlify/Render</p>
           </div>
         </div>
         <div className={styles.serviceBox}>
