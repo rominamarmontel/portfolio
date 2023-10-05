@@ -47,7 +47,7 @@ const Header = () => {
           <li><HashLink smooth to="/portfolio#works">Works</HashLink></li>
           <li><HashLink to="/portfolio#about">About</HashLink></li>
           <li><HashLink to="#contact">Contact</HashLink></li>
-          <li className='sns'><Link to='https://www.linkedin.com/in/hiromi-varnier/' target="_blank" rel="noopener noreferrer"><FaGithub style={{ color: "#c4010a", fontSize: "20px" }} /></Link></li>
+          <li className='sns'><Link to='https://github.com/rominamarmontel/#my-porfolio-project' target="_blank" rel="noopener noreferrer"><FaGithub style={{ color: "#c4010a", fontSize: "20px" }} /></Link></li>
           <li className='sns'><Link to='https://www.linkedin.com/in/hiromi-varnier/' target="_blank" rel="noopener noreferrer"><FaLinkedin style={{ color: "#c4010a", fontSize: "20px" }} /></Link></li>
         </ul>
       </nav>

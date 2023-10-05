@@ -45,3 +45,15 @@
   color: #666666;
   font-weight: 100;
 }
+
+@media screen and (max-width: 992px) {
+  .work {
+    width: 45%; 
+  }
+}
+@media (max-width: 720px) {}
+@media screen and (max-width: 510px) {
+  .work {
+    width: 100%; 
+  }
+}

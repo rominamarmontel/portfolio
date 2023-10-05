@@ -127,3 +127,9 @@ h2 {
     align-items: baseline;
   }
 }
+
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 510px) {
+}
+@media (max-width: 720px) {}
