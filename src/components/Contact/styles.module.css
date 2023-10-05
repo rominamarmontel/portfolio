@@ -1,0 +1,16 @@
+.Contact {
+  background-color: #ffff;
+}
+.Contact .layer {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contactText {
+  text-align: center;
+  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
+}
+.contactText span {
+  color: #c4010a;
+}

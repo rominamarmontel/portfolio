@@ -32,7 +32,7 @@ export default function App() {
     setOpen(false);
     setTimeout(() => {
       navigate('/portfolio');
-    }, 2000); // フェードアウトが完了するまでの時間
+    }, 2000);
   };
   return (
     <div className={styles.container}>

@@ -1,0 +1,64 @@
+.About {
+  background-color: #f4ede6;
+}
+.layer {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.title {
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.skills span {
+  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.aboutbox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.aboutbox > div {
+  width: 50%;
+}
+.aboutbox img {
+  width: 100%;
+}
+.abouttext {
+  padding-right: 50px;
+}
+.education {
+  margin-top: 10px;
+}
+.education p {
+  text-decoration: 1px underline;
+  text-underline-offset: 5px;
+}
+.education li {
+  font-size: .8em;
+  line-height: 16px;
+}
+.education h4 {
+  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
+}
+.english {
+  display: block;
+  width: 120px;
+  line-height: 30px;
+  border: 1px solid #333333;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}

@@ -1,0 +1,47 @@
+.Works {
+  background-color: #ffff;
+}
+.Works > .layer {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.worksbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work {
+  width: 23%; 
+  margin-bottom: 20px; 
+  box-sizing: border-box; 
+}
+.work img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.work img:hover {
+  opacity: .8;
+  transition: ease 0.3s;
+}
+.work h4 {
+  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
+  text-align: left;
+  font-size: 1.3em;
+  width: 100%;
+  color:#000000;
+  padding-top: 10px;
+}
+.work a {
+  text-decoration: none;
+}
+.work span {
+  font-size: .6em;
+  font-family: 'myfont-light';
+  color: #666666;
+  font-weight: 100;
+}
