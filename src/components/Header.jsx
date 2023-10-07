@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
@@ -24,6 +24,8 @@ const Header = () => {
     setOpen(false);
   };
 
+  const menuRef = useRef(null);
+
   useEffect(() => {
     const handleResize = () => {
       const newWindowWidth = window.innerWidth;
@@ -37,6 +39,23 @@ const Header = () => {
       window.removeEventListener('resize', handleResize);
     };
   })
+
+  useEffect(() => {
+    const handleClickOutsideMenu = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+
+    if (open) {
+      document.addEventListener('click', handleClickOutsideMenu);
+    } else {
+      document.removeEventListener('click', handleClickOutsideMenu);
+    }
+    return () => {
+      document.removeEventListener('click', handleClickOutsideMenu);
+    };
+  }, [open]);
 
   useScroll(({ scrollY }) => {
     y.value = scrollY;
@@ -63,18 +82,18 @@ const Header = () => {
           boxShadow
         }}
       >
-        <HashLink to='/'>
+        <HashLink to='/portfolio#'>
           <div className='logo'>
             <h3>H<span>I</span>ROM<span>I</span> VARN<span>I</span>ER</h3>
           </div>
         </HashLink>
 
         {windowWidth <= 992 ? (
-          <div className="hamburger">
+          <div className='hamburger' ref={menuRef}>
             <ToggleButton
               open={open}
               controls="navigation"
-              label="メニューを開きます"
+              label="open menu"
               onClick={toggleFunction}
             />
             <Navigation id="navigation" open={open} onClose={handleCloseMenu} />
@@ -82,7 +101,6 @@ const Header = () => {
         ) : (
           <nav>
             <ul>
-              <li><HashLink to='/portfolio#'>Top</HashLink></li>
               <li><HashLink smooth to="/portfolio#works">Works</HashLink></li>
               <li><HashLink to="/portfolio#about">About</HashLink></li>
               <li><HashLink to="#contact">Contact</HashLink></li>
