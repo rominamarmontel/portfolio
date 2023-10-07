@@ -63,6 +63,7 @@
   font-style: italic;
 }
 
+
 @media screen and (max-width: 992px) {
   .skills span {
     font-size: 1.2em;

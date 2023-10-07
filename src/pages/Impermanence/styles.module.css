@@ -3,89 +3,143 @@
   height: auto;
 }
 .container {
-  padding-top: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   width: 80%;
   margin: 0 auto;
 }
-.Impermanence img {
-  width: 100%;
+.top_container {
+  display: flex;
 }
-.title {
+.rightbox {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
+  margin-top: 22px;
+  margin-bottom: 100px;
 }
-.title h2 {
-  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-}
-.title > div:first-child {
+.imagebox1 {
+  margin: 0!important;
   display: flex;
-  gap: 20px;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(70% - 50px);
+  height: auto;
 }
-.title > div > p {
-  font-size: .8em;
+.text {
+  width: 100%;
+}
+.imagebox1 > img {
+  width: 100%;
+  object-fit: cover;
+}
+.textIntro {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: unset!important;
+  padding: unset!important;
+}
+
+.titleTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.text p, .boxText p {
+  line-height: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+}
+.date {
+  font-family: "myfont-light" !important;
+  font-size: 13px!important;
+  font-weight: 800;
+  margin-bottom: 0;
 }
 .sns {
   display: flex;
-  font-size: 1.3em;
+  font-size: 1.5rem;
   gap: 10px;
 }
 .sns svg {
-  color: black;
+  color: #c4010a;
 }
 .sns svg:hover {
   color: gray;
 }
 .subtitle {
-  font-weight: 600;
+  font-family: "myfont-medium";
+  font-size: 1rem;
 }
 .textEnglish {
-  color: rgb(236, 158, 14);
+  color: rgb(148, 148, 148);
+  margin: unset!important;
 }
-.textIntro {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-.serviceBox:nth-child(odd) {
+.bottom_container {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 100px;
-  align-items: center;
+  gap: 50px
 }
-.serviceBox:nth-child(even) {
+.serviceBox {
   display: flex;
-  gap: 100px;
-  align-items: center;
+  flex-direction: column;
+  width: calc(40% - 50px);
 }
-.serviceBox > div {
-  width: 50%;
-  margin-bottom: 100px;
-  align-content: center;
+.boxText {
+  width: 100%;
+  margin-top: 30px;
 }
-.serviceBox > div > img {
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+.imagebox2, .imagebox3, .imagebox4 {
+  width: 100%;
+  height: auto;
+}
+.imagebox2 img, .imagebox3 img, .imagebox4 img {
+  width: 100%;
 }
 
-@media screen and (max-width: 510px) {}
 @media screen and (max-width: 992px) {
-  .container {
-    padding-top: 100px;
-    width: 90%;
+  .top_container {
+    flex-direction: column;
+    gap: 0px;
   }
-  .serviceBox:nth-child(odd) {
-    display: unset;
-    flex-direction: unset;
-    gap: unset;
-    align-items: unset;
-  }
-  .serviceBox:nth-child(even) {
-    display: unset;
-    gap: unset;
-    align-items: unset;
-  }
-  .serviceBox > div {
+ .imagebox1 {
     width: 100%;
-    margin-bottom: 50px;
+    padding-bottom: 30px;
+  }
+  .text {
+    width: 100%;
+  }
+  .titleTop {
+    margin-bottom: 0px;
+  }
+  .rightbox {
+    flex-direction: column;
+  }
+  .textIntro {
+    width: 100%;
+  }
+  .bottom_container {
+   flex-wrap: wrap;
+  }
+  .serviceBox {
+    width: calc(50% - 50px);
+  }
+}
+@media screen and (max-width: 510px) {
+  .bottom_container {
+    flex-direction: column;
+  }
+  .serviceBox {
+    width: 100%;
   }
 }
