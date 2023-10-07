@@ -133,9 +133,9 @@ h2 {
   header nav ul li {
     font-size: .9em;
   }
-  header nav ul li svg {
+  /* header nav ul li svg {
     display: none;
-  }
+  } */
   header nav ul {
     display: flex;
     align-items: baseline;
