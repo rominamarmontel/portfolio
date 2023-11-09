@@ -16,13 +16,7 @@ const Introduction = () => {
             <div className={styles.english} onClick={toggleLanguage}>{isEnglish ? 'English version' : 'French version'}</div>
           </div>
           {isEnglish ? (
-            <p>Née à Fukuoka, Japon
-              et vivant à Paris depuis une décennie,
-              j'ai été envoûté par les cultures fascinantes de ces deux mondes.
-              À partir de 2022, j'ai entrepris une formation en codage et obtenu ma certification en tant que développeur web (Full Stack) ce printemps.
-              Ma passion pour React et Express me pousse à améliorer constamment mes compétences grâce à des projets de codage quotidiens.
-              J'aspire à être un professionnel polyvalent, compétent tant en frontend qu'en backend, capable de fournir des solutions web innovantes et percutantes.
-              Doté d'une dévotion profonde pour perfectionner mon savoir-faire, je m'efforce de créer des projets captivants qui conjuguent design exceptionnel et performance.</p>
+            <p>Née à Fukuoka, Japon et vivant à Paris depuis une décennie, j'ai été envoûtée par les cultures fascinantes de ces deux mondes. À partir de 2022, j'ai entrepris une formation en codage et obtenu ma certification en tant que développeur web Full Stack ce printemps 2023. Ma passion pour React et Express me pousse à améliorer constamment mes compétences grâce à des projets de codage quotidiens. J'aspire à être une professionnelle polyvalente, compétente tant en frontend qu'en backend, capable de fournir des solutions web innovantes et percutantes. Dotée d'une dévotion profonde pour perfectionner mon savoir-faire, je m'efforce de créer des projets captivants qui conjuguent design et performance.</p>
           ) : (
             <>
               <p className={styles.textEnglish}>Born in Fukuoka, Japan

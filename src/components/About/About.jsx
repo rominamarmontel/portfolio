@@ -37,7 +37,8 @@ const About = () => {
           <div className={styles.abouttext}>
             {isEnglish ? (
               <>
-                <p>Maîtrisant à la fois l'anglais et le français, avec le japonais comme langue maternelle. Je suis plein de sens des responsabilités et de curiosité, j'adore rigoler. Je sais travailler en équipe tout en étant capable de travailler de manière autonome. J'adore la programmation avant tout, et bien que je sois encore un junior qui vient de faire ses premiers pas dans ce monde, je souhaite développer davantage mes compétences en travaillant avec des développeurs professionnels.<br />Je suis japonaise et possède un permis de séjour et un permis de travail en France.</p>
+                <p>Maîtrisant à la fois l'anglais, le français, et le japonais comme langue maternelle. J’ai le sens des responsabilités, de nature curieuse, j'adore rigoler. Je sais travailler en équipe mais aussi de manière autonome. J'aime la programmation avant tout, et bien que je sois encore un junior qui vient de faire ses premiers pas dans ce monde, je souhaite développer davantage mes compétences en travaillant avec des développeurs professionnels.
+                  Je suis japonaise et possède un permis de séjour et un permis de travail en France.</p>
                 <div className={styles.education}>
                   <h4>ETUDE / FORMATION</h4>
                   <p>IRONHACK PARIS 01/2023 - 03/2023<br />TITRE RNCP NIVEAU 6</p>
