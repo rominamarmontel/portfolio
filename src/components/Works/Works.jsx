@@ -9,6 +9,15 @@ const Works = () => {
         <h2>Works</h2>
         <div className={styles.worksbox}>
           <div className={styles.work}>
+            <Link to='/impermanence-nextjs'>
+              <div>
+                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1700492761/nextImpermanence_images/euwsaydo4v10idqovlk9.png' alt='impermanence-nextJs' />
+                <h4>Web application<br />
+                  <span>Nov 2023</span></h4>
+              </div>
+            </Link>
+          </div>
+          <div className={styles.work}>
             <Link to='/muun'>
               <div>
                 <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693410505/portfolio/Screenshot_2023-08-30_at_17.48.06_yifnhr.png' alt='muun' />

@@ -14,6 +14,17 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.worksbox::before {
+  width: 23%;
+  display: block;
+  content:"";
+  order: 1;
+}
+.worksbox::after {
+  width: 23%;
+  display: block;
+  content:"";
+}
 .work {
   width: 23%; 
   margin-bottom: 20px; 

@@ -9,6 +9,7 @@ import Impermanence from './pages/Impermanence/Impermanence.jsx'
 import Kanraku from './pages/Kanraku/Kanraku.jsx'
 import Project1 from './pages/Project1/Project1.jsx'
 import Project2 from './pages/Project2/Project2.jsx'
+import ImpermanenceNextJs from './pages/impermanence-nextJs/Impermanence-next'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route element={<Layout />}>
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/impermanence-nextjs" element={<ImpermanenceNextJs />} />
           <Route path="/muun" element={<Muun />} />
           <Route path="/impermanence" element={<Impermanence />} />
           <Route path="/kanraku" element={<Kanraku />} />
