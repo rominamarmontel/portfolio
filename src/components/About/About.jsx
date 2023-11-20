@@ -16,7 +16,9 @@ const About = () => {
         </div>
         <div className={styles.skills}>
           <span>JAVASCRIPT ES5 / ES6</span>
+          <span>NextJS</span>
           <span>ReactJS</span>
+          <span>TypeScript</span>
           <span>NodeJS</span>
           <span>ExpressJS</span>
           <span>MongoDB</span>
