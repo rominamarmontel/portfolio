@@ -11,7 +11,7 @@ const Works = () => {
           <div className={styles.work}>
             <Link to='/invoicer_app'>
               <div>
-                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704133453/portfolio/Screenshot_2024-01-01_at_19.23.51_iyeogv.png' alt='invoice_app' />
+                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704139436/portfolio/Screenshot_2024-01-01_at_20.26.02_k6wy8x.png' alt='invoice_app' />
                 <h4>Invoicer App<br />
                   <span>Dec 2023</span></h4>
               </div>
