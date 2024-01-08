@@ -83,8 +83,8 @@ const Header = () => {
         }}
       >
         <HashLink to='/portfolio#'>
-          <div className='logo'>
-            <h3>H<span>I</span>ROM<span>I</span> VARN<span>I</span>ER</h3>
+          <div className='logo' >
+            <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704647335/portfolio/logo_portfolio_hbscys.png' alt='logo' width={300} />
           </div>
         </HashLink>
 
