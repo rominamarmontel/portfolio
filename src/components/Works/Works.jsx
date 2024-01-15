@@ -8,6 +8,7 @@ import ModalImper from '../../pages/ModalImper';
 import ModalKanraku from '../../pages/ModalKanraku';
 import ModalExquisite from '../../pages/ModalExquisite';
 import ModalMonkey from '../../pages/ModalMonkey';
+import Fade from 'react-reveal/Fade';
 
 const Works = () => {
   const [showInvoice, setShowInvoice] = useState(false)
@@ -24,7 +25,9 @@ const Works = () => {
         <div className={styles.worksbox}>
           <div className={styles.work_container_color}>
             <div className={styles.title}>
-              <h2>PROJETS</h2>
+              <Fade top>
+                <h2>PROJETS</h2>
+              </Fade>
             </div>
           </div>
           <button className={styles.work_container} onClick={() => setShowInvoice(true)}>

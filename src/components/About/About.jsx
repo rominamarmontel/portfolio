@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom'
 import styles from './styles.module.css';
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
   const aboutRef = useRef();
@@ -29,7 +29,9 @@ const About = () => {
         <div className={styles.layertxt}>
           <div className={styles.introText}>
             <div className={styles.title_mobile}>
-              <h2>À PROPOS</h2>
+              <Fade top>
+                <h2>À PROPOS</h2>
+              </Fade>
             </div>
             <div className={styles.aboutImage}>
               <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704810827/DSCN0420_q19nnf.jpg' alt='' />
