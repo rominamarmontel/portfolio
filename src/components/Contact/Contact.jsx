@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 // import { GiRotaryPhone } from 'react-icons/gi'
 import { SiMailgun } from 'react-icons/si'
-import Fade from 'react-reveal/Fade';
 
 const Contact = () => {
   return (
@@ -14,9 +13,7 @@ const Contact = () => {
           </div>
           <div className={styles.contactItem}>
             <div className={styles.title}>
-              <Fade left>
-                <h2>CONTACT</h2>
-              </Fade>
+              <h2>CONTACT</h2>
             </div>
             <h3>Merci de me contacter, </h3>
             <div className={styles.description}>

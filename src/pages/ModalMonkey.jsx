@@ -1,5 +1,4 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa';
 
@@ -14,12 +13,10 @@ const ModalMonkey = ({ show, setShow }) => {
           <div className='modal_container'>
             <div className='modal_left flex flex-col'>
               <div className='modal_text'>
-                <Fade left>
-                  <div className='modal_fade'>
-                    <h3>WIN x WIN HAPPY MONKEY</h3>
-                    <Link to='https://github.com/rominamarmontel/numberGame' target="_blank" rel="noopener noreferrer"><FaGithub className='icons_github' /></Link>
-                  </div>
-                </Fade>
+                <div className='modal_fade'>
+                  <h3>WIN x WIN HAPPY MONKEY</h3>
+                  <Link to='https://github.com/rominamarmontel/numberGame' target="_blank" rel="noopener noreferrer"><FaGithub className='icons_github' /></Link>
+                </div>
                 <div className='block fadeIn1500ms'>
                   <p><span>TECHNOLOGIE : </span>JavaScript, HTML, CSS</p>
                   <p><span>CI/CD : </span></p>

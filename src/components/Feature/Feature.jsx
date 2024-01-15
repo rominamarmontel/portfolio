@@ -1,5 +1,4 @@
 import styles from './styles.module.css'
-import Fade from 'react-reveal/Fade';
 import { useEffect, useRef } from 'react';
 
 const Feature = () => {
@@ -27,9 +26,7 @@ const Feature = () => {
       <div className={styles.layer}>
         <div className={styles.competence}>
           <div className={styles.title}>
-            <Fade left>
-              <h2>COMPÉTENCE</h2>
-            </Fade>
+            <h2>COMPÉTENCE</h2>
           </div>
           <div className={styles.frontend}>
             <h3>FRONT-END<br />

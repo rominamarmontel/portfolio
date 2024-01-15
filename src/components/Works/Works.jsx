@@ -1,6 +1,5 @@
 
 import styles from './styles.module.css'
-import Fade from 'react-reveal/Fade';
 import React, { useState } from "react";
 import ModalInvoice from '../../pages/ModalInvoice';
 import ModalImperNext from '../../pages/ModalImperNext';
@@ -25,9 +24,7 @@ const Works = () => {
         <div className={styles.worksbox}>
           <div className={styles.work_container_color}>
             <div className={styles.title}>
-              <Fade left>
-                <h2>PROJETS</h2>
-              </Fade>
+              <h2>PROJETS</h2>
             </div>
           </div>
           <button className={styles.work_container} onClick={() => setShowInvoice(true)}>
@@ -77,8 +74,6 @@ const Works = () => {
           {showImper && (
             <ModalImper show={showImper} setShow={setShowImper} />
           )}
-
-
 
           <button className={styles.work_container} onClick={() => setShowKanraku(true)}>
             <div className={styles.work_image}>

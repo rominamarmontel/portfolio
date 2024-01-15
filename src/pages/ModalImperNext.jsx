@@ -1,5 +1,4 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa';
 import { PiLinkSimpleFill } from 'react-icons/pi'
@@ -15,15 +14,15 @@ const ModalImperNext = ({ show, setShow }) => {
           <div className='modal_container'>
             <div className='modal_left flex flex-col'>
               <div className='modal_text'>
-                <Fade left>
-                  <div className='modal_fade'>
-                    <h3>Impermanence Films <span>- Next.js 13 version -</span></h3>
-                    <div className='modal_link'>
-                      <Link to='https://github.com/rominamarmontel/impermanence-next/tree/main' target="_blank" rel="noopener noreferrer"><FaGithub className='icons_github' /></Link>
-                      <Link to='https://impermanencefilms-next.vercel.app/' target="_blank" rel="noopener noreferrer"><PiLinkSimpleFill className='icons_github' /></Link>
-                    </div>
+
+                <div className='modal_fade'>
+                  <h3>Impermanence Films <span>- Next.js 13 version -</span></h3>
+                  <div className='modal_link'>
+                    <Link to='https://github.com/rominamarmontel/impermanence-next/tree/main' target="_blank" rel="noopener noreferrer"><FaGithub className='icons_github' /></Link>
+                    <Link to='https://impermanencefilms-next.vercel.app/' target="_blank" rel="noopener noreferrer"><PiLinkSimpleFill className='icons_github' /></Link>
                   </div>
-                </Fade>
+                </div>
+
                 <div className='block fadeIn1500ms'>
                   <p><span>TECHNOLOGIE : </span>NodeJS, NextJS, MongoDB, HTML, CSS, Mongoose, Postman, Cloudinary, TailwindCss</p>
                   <p><span>CI/CD : </span>Vercel</p>

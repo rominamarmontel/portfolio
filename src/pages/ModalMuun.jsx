@@ -1,5 +1,4 @@
 import React from 'react'
-import Fade from 'react-reveal/Fade'
 import { Link } from 'react-router-dom'
 import { PiLinkSimpleFill } from 'react-icons/pi'
 
@@ -14,14 +13,12 @@ const ModalMuun = ({ show, setShow }) => {
           <div className='modal_container'>
             <div className='modal_left flex flex-col'>
               <div className='modal_text'>
-                <Fade left>
-                  <div className='modal_fade'>
-                    <h3>Muuñ official website</h3>
-                    <Link to='https://www.muun.fr/' target="_blank" rel="noopener noreferrer" >
-                      <PiLinkSimpleFill className='icons_github' />
-                    </Link>
-                  </div>
-                </Fade>
+                <div className='modal_fade'>
+                  <h3>Muuñ official website</h3>
+                  <Link to='https://www.muun.fr/' target="_blank" rel="noopener noreferrer" >
+                    <PiLinkSimpleFill className='icons_github' />
+                  </Link>
+                </div>
                 <div className='block fadeIn1500ms'>
                   <p><span>TECHNOLOGIE : </span>WordPress, Elementor</p>
                   <p><span>CI/CD : </span>Vercel</p>
