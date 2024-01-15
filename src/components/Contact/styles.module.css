@@ -14,6 +14,10 @@
 .title h2 {
   padding-bottom: unset;
 }
+.merci {
+  display: flex;
+  justify-content: space-between;
+}
 .contact_image img {
   width: 300px;
   height: 300px;
@@ -25,6 +29,10 @@
   color: #333333;
   font-size: 15px;
   font-weight: 500;
+}
+.link a:hover {
+  background-color: black;
+  color: white;
 }
 .contactItem {
   width: 100%;
@@ -55,9 +63,39 @@
   justify-content: center;
   align-items: center;
 }
+.merci {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link_icons {
+  display: flex;
+  align-items: center;
+}
+.link_icons a:hover {
+  color: black;
+}
 .mailme p {
   border-bottom: 1px solid #333333;
   color: #c4010a;
+}
+.linkedin_icons {
+  font-size: 48px;
+  color: #9a9a9a;
+  font-weight: 400;
+}
+.github_icons {
+  font-size: 36px;
+  color:#9a9a9a;
+}
+
+.mail_icons {
+  font-size: 36px;
+  color:#c4010a;
+}
+.mail_icons a:hover {
+  background-color: #c4010a;
+  color: white;
 }
 @media screen and (max-width: 960px) {
 }

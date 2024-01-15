@@ -317,6 +317,7 @@ footer {
 }
 .icons_github {
   color: #ff4e02;
+  font-size: 30px;
 }
 .modal_link {
   display: flex;
