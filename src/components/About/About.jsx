@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './styles.module.css';
-import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   const aboutRef = useRef();
@@ -29,7 +29,7 @@ const About = () => {
         <div className={styles.layertxt}>
           <div className={styles.introText}>
             <div className={styles.title_mobile}>
-              <Fade left>
+              <Fade>
                 <h2>À PROPOS</h2>
               </Fade>
             </div>
