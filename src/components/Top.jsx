@@ -10,9 +10,9 @@ const Top = () => {
 
   const texts = [
     'née à Fukuoka, Japon',
-    'parle le JAPONAIS, le FRANÇAIS, l’ANGLAIS',
+    'parle JAPONAIS, FRANÇAIS, ANGLAIS',
     'développe des applications web pour des entreprises',
-    'JavaScript, NodeJs, ReactJs, TypeScript',
+    'est passionnée par JavaScript, NodeJs, ReactJs, TypeScript ♥',
   ]
 
   return (
