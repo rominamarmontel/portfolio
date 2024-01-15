@@ -31,36 +31,6 @@
 }
 
 @font-face {
-  font-family: "myfont-objective-light";
-  src: url("../public/fonts/Objective-Light.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "myfont-objective-bold";
-  src: url("../public/fonts/Objective-Bold.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "myfont-objective-medium";
-  src: url("../public/fonts/Objective-Medium.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "myfont-objective-thin";
-  src: url("../public/fonts/Objective-Thin.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "myfont-objective-regular";
-  src: url("../public/fonts/Objective-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "myfont-helvetica-bold";
   src: url("../public/fonts/Helvetica-Bold.ttf") format("truetype");
   font-weight: normal;
