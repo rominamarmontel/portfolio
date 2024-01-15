@@ -24,7 +24,7 @@ const Contact = () => {
                   </button>
                 </div>
                 <div className={styles.link}>
-                  <Link href='https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing' className={styles.link_cv} target='_blank'>VOIR MON CV</Link>
+                  <Link to='https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing' className={styles.link_cv} target='_blank'>VOIR MON CV</Link>
                 </div>
               </div>
             </div>

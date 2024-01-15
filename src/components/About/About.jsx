@@ -36,7 +36,7 @@ const About = () => {
             </div>
             <div className={`${styles.description} ${styles.fadeIn}`} ref={aboutRef}>
               <p>J'ai changé de cap depuis le monde de la télévision et de la logistique pour devenir une développeuse web Full-Stack polyvalente. Je parle couramment le japonais, le français, et l'anglais, apportant une touche trilingue à mon travail. Avec une expérience dans la coordination de projets culturels japonais-français, je suis passionnée par la création de liens. Bien que je sois junior, j'adore plonger dans de nouvelles technologies et relever des défis pour améliorer mes compétences au quotidien. Ma passion réside dans la création d'applications web avec un code propre, un design attrayant, et des fonctionnalités. Je ne suis pas seulement une développeuse, je suis également avide d'acquérir de nouvelles compétences et expériences dans le cadre de mon travail. J'ai hâte de rejoindre une équipe dynamique où je pourrai être une excellente développeuse tout en apprenant et en évoluant à travers des projets passionnants.</p>
-              <Link href='https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing' className={styles.link_cv} target='_blank'>VOIR MON CV</Link>
+              {/* <Link to='https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing' className={styles.link_cv} target='_blank'>VOIR MON CV</Link> */}
             </div>
             <div className={styles.title}>
               <h2>À PROPOS</h2>
