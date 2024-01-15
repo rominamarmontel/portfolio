@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <small>&copy; Hiromi Varnier</small>
+    <small>&copy; 2024 Hiromi Varnier</small>
   )
 }
 

@@ -1,16 +1,85 @@
 .Contact {
-  background-color: #ffff;
-}
-.Contact .layer {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.contactText {
-  text-align: center;
-  font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
+.Contact .layer {
+  width: 90%;
+  text-align: left;
 }
-.contactText span {
+.contact_container {
+  display: flex;
+  justify-content: flex-start;
+}
+.title h2 {
+  padding-bottom: unset;
+}
+.contact_image img {
+  width: 300px;
+  height: 300px;
+}
+.link_cv {
+  border: 1px solid #333333;
+  text-decoration: none;
+  padding: 8px 20px;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contactItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 64px;
+  height: 300px;
+}
+.description {
+  width: 100%;
+}
+.description > div {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.contactme {
+  width: 100%;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid #333333;
+}
+.link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mailme p {
+  border-bottom: 1px solid #333333;
   color: #c4010a;
+}
+@media screen and (max-width: 960px) {
+}
+@media (max-width: 720px) {}
+@media screen and (max-width: 510px) {
+  .Contact .layer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact_container {
+    display: flex;
+    justify-content: center;
+  }
+  .contact_image img {
+    display: none;
+  }
+  .link_cv {
+    padding: 8px 10px;
+  }
+  .contactItem {
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+  }
 }

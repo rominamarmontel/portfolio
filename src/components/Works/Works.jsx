@@ -1,80 +1,126 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+
 import styles from './styles.module.css'
+import Fade from 'react-reveal/Fade';
+import React, { useState } from "react";
+import ModalInvoice from '../../pages/ModalInvoice';
+import ModalImperNext from '../../pages/ModalImperNext';
+import ModalMuun from '../../pages/ModalMuun';
+import ModalImper from '../../pages/ModalImper';
+import ModalKanraku from '../../pages/ModalKanraku';
+import ModalExquisite from '../../pages/ModalExquisite';
+import ModalMonkey from '../../pages/ModalMonkey';
 
 const Works = () => {
+  const [showInvoice, setShowInvoice] = useState(false)
+  const [showImperNext, setShowImperNext] = useState(false)
+  const [showMuun, setShowMuun] = useState(false)
+  const [showImper, setShowImper] = useState(false)
+  const [showKanraku, setShowKanraku] = useState(false)
+  const [showExquisite, setShowExquisite] = useState(false)
+  const [showMonkey, setShowMonkey] = useState(false)
+
   return (
     <div className={styles.Works}>
       <div className={styles.layer}>
-        <h2>Works</h2>
         <div className={styles.worksbox}>
-          <div className={styles.work}>
-            <Link to='/invoicer_app'>
-              <div>
-                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704139436/portfolio/Screenshot_2024-01-01_at_20.26.02_k6wy8x.png' alt='invoice_app' />
-                <h4>Invoicer App<br />
-                  <span>Dec 2023</span></h4>
-              </div>
-            </Link>
+          <div className={styles.work_container_color}>
+            <div className={styles.title}>
+              <Fade left>
+                <h2>PROJETS</h2>
+              </Fade>
+            </div>
           </div>
-          <div className={styles.work}>
-            <Link to='/impermanence-nextjs'>
-              <div>
-                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1700492761/nextImpermanence_images/euwsaydo4v10idqovlk9.png' alt='impermanence-nextJs' />
-                <h4>Web application<br />
-                  <span>Nov 2023</span></h4>
+          <button className={styles.work_container} onClick={() => setShowInvoice(true)}>
+            <div className={styles.work_image}>
+              <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704827842/Screenshot-2024-01-09-at-20.15.43_nck8jw.jpg' alt='invoice' />
+              <div className={styles.mask}>
+                <div className={styles.caption}>Invoicer App<br />Déc 2023<br />Web application</div>
               </div>
-            </Link>
-          </div>
-          <div className={styles.work}>
-            <Link to='/muun'>
-              <div>
-                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693410505/portfolio/Screenshot_2023-08-30_at_17.48.06_yifnhr.png' alt='muun' />
-                <h4>EC site<br />
-                  <span>Aout - Present 2023</span>
-                </h4>
+            </div>
+          </button>
+          {showInvoice && (
+            <ModalInvoice show={showInvoice} setShow={setShowInvoice} />
+          )}
+
+          <button className={styles.work_container} onClick={() => setShowImperNext(true)}>
+            <div className={styles.work_image}>
+              <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704823493/Screenshot_2024-01-09_at_19.04.26_cwdvwx.png' alt='imper_next' />
+              <div className={styles.mask}>
+                <div className={styles.caption}>Impermanence Films -NextJS ver.-<br />Nov 2023<br />Web application</div>
               </div>
-            </Link>
-          </div>
-          <div className={styles.work}>
-            <Link to='/impermanence'>
-              <div>
-                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408713/portfolio/247889551-f2b4cfbb-f470-4bcd-9903-ce4ee391684a_edited_cmxrho.jpg' alt='impermanencefilms' />
-                <h4>Web application<br />
-                  <span>Mai - Juil 2023</span></h4>
+            </div>
+          </button>
+          {showImperNext && (
+            <ModalImperNext show={showImperNext} setShow={setShowImperNext} />
+          )}
+
+          <button className={styles.work_container} onClick={() => setShowMuun(true)}>
+            <div className={styles.work_image}>
+              <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704822762/Screenshot-2024-01-09-at-18.48.06_gvtwzk.jpg' alt='muun' />
+              <div className={styles.mask}>
+                <div className={styles.caption}>Muun e-commerce web site<br />Sep 2023<br />e-commerce</div>
               </div>
-            </Link>
-          </div>
-          <div className={styles.work}>
-            <Link to='/kanraku'>
-              <div>
-                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693496603/portfolio/247885359-e249cde4-af45-4051-8426-edf21bc77785_1_1_u49f86.png' alt='kanraku' />
-                <h4>EC site<br />
-                  <span>Mars 2023@IRONHACK</span></h4>
+            </div>
+          </button>
+          {showMuun && (
+            <ModalMuun show={showMuun} setShow={setShowMuun} />
+          )}
+
+          <button className={styles.work_container} onClick={() => setShowImper(true)}>
+            <div className={styles.work_image}>
+              <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704822887/Screenshot-2024-01-09-at-18.48.06_acjxri.jpg' alt='impermanencefilms' />
+              <div className={styles.mask}>
+                <div className={styles.caption}>Impermanence Films<br />Mai - Juil 2023<br />Web application</div>
               </div>
-            </Link>
-          </div>
-          <div className={styles.work}>
-            <Link to='/project2'>
-              <div>
-                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408714/portfolio/247888287-aee68f84-6d60-4d20-a8ef-9d061462254d_1_veyqpx.png' alt='exquisite' />
-                <h4>Web application<br />
-                  <span>Feb 2023@IRONHACK</span></h4>
+            </div>
+          </button>
+          {showImper && (
+            <ModalImper show={showImper} setShow={setShowImper} />
+          )}
+
+
+
+          <button className={styles.work_container} onClick={() => setShowKanraku(true)}>
+            <div className={styles.work_image}>
+              {/* <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693496603/portfolio/247885359-e249cde4-af45-4051-8426-edf21bc77785_1_1_u49f86.png' alt='kanraku' /> */}
+              <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704823834/Screenshot-2024-01-09-at-19.07.49_mgln4l.jpg' alt='kanraku' />
+              <div className={styles.mask}>
+                <div className={styles.caption}>KANRAKU HOSAI<br />Mars 2023<br />Projet final@IRONHACK</div>
               </div>
-            </Link>
-          </div>
-          <div className={styles.work}>
-            <Link to='/project1'>
-              <div>
-                <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693496307/portfolio/216149858-deaa521f-1e9e-485e-8840-5633e1d4e3fa_1_1_byw3se.png' alt='happymonkey' />
-                <h4>Web application<br />
-                  <span>Jan 2023@IRONHACK</span></h4>
+            </div>
+          </button>
+          {showKanraku && (
+            <ModalKanraku show={showKanraku} setShow={setShowKanraku} />
+          )}
+
+          <button className={styles.work_container} onClick={() => setShowExquisite(true)}>
+            <div className={styles.work_image}>
+              <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704824104/Screenshot-2024-01-09-at-18.48.06_gaqwet.jpg' alt='exquisite' />
+              <div className={styles.mask}>
+                <div className={styles.caption}>Exquisite Story<br />Feb. 2023<br />Équipe projet@IRONHACK</div>
               </div>
-            </Link>
-          </div>
+            </div>
+          </button>
+          {showExquisite && (
+            <ModalExquisite show={showExquisite} setShow={setShowExquisite} />
+          )}
+
+          <button className={styles.work_container} onClick={() => setShowMonkey(true)}>
+            <div className={styles.work_image}>
+              <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1704824479/Screenshot-2024-01-09-at-18.42.31_wlxvcn.jpg' alt='happymonkey' />
+              <div className={styles.mask}>
+                <div className={styles.caption}>WIN x WIN HAPPY MONKEY<br />Jan 2023<br />Projet solo@IRON</div>
+              </div>
+            </div>
+          </button>
+          {showMonkey && (
+            <ModalMonkey show={showMonkey} setShow={setShowMonkey} />
+          )}
+
+          <div className={styles.work_container_color2}></div>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }
 

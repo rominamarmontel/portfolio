@@ -15,6 +15,7 @@ button {
   justify-content: flex-end;
   padding: 0rem;
   z-index: 999;
+  height: auto;
 }
 
 .toggleButon {

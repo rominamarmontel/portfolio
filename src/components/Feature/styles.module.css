@@ -1,0 +1,122 @@
+.Feature {
+  width: 100%;
+  background-color: #f8f7f6;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  opacity: 0;
+}
+.layer {
+  margin: 0 auto;
+}
+.competence {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-right: 100px;
+}
+.title h2 {
+  writing-mode: vertical-rl;
+}
+.frontend h3, .backend h3 {
+  font-size: 35px;
+  line-height: 0.85;
+  margin-bottom: 50px;
+}
+.frontend h3 > span, .backend h3 > span {
+  font-size: 35px;
+  line-height: 0.85;
+  color: #949494;
+}
+.box_frontend > div, .box_backend > div {
+  border: 1px solid #d5d8db;
+  margin: 0 10px 10px 0;
+  text-align:left;
+  padding: 20px 30px 5px 30px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px #d5d8db;
+}
+.item_frontend, .item_backend {
+  display: flex;
+}
+.item_frontend p, .item_backend p {
+  letter-spacing: 0;
+  font-size: 30px;
+  line-height: 1.4rem;
+  text-align: left;
+  color: black;
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.delay1 {
+  animation-delay: 0.3s; 
+}
+.delay2 {
+  animation-delay: 0.6s; 
+}
+.delay3 {
+  animation-delay: 0.9s; 
+}
+.delay4 {
+  animation-delay: 1.2s; 
+}
+.delay5 {
+  animation-delay: 1.5s; 
+}
+.delay6 {
+  animation-delay: 1.8s; 
+}
+@media screen and (max-width: 960px) {
+  .layer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .title h2 {
+    writing-mode: unset;
+  }
+  .competence {
+    flex-direction: column;
+    margin-right: unset;
+  }
+  .box_frontend > div, .box_backend > div {
+    border: 1px solid #d5d8db;
+    margin: 0 10px 10px 0;
+    text-align:left;
+    padding: 20px 10px 5px 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #d5d8db;
+  }
+  
+}
+@media (max-width: 720px) {}
+@media screen and (max-width: 510px) {
+  .layer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .title h2 {
+    writing-mode: unset;
+  }
+  .competence {
+    flex-direction: column;
+    margin-right: unset;
+  }
+  .box_frontend > div, .box_backend > div {
+    border: 1px solid #d5d8db;
+    margin: 0 10px 10px 0;
+    text-align:left;
+    padding: 20px 10px 5px 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px #d5d8db;
+  }
+}
