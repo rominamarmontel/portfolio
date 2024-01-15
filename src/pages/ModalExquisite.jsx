@@ -2,15 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaGithub } from 'react-icons/fa';
 import { PiLinkSimpleFill } from 'react-icons/pi'
+import ModalCloseButton from '../components/ModalCloseButton';
 
 const ModalExquisite = ({ show, setShow }) => {
   if (show) {
     return (
       <div id='overlay'>
         <div id='modal_content'>
-          <button onClick={() => setShow(false)} className='modal_closeButton'>
-            X
-          </button>
+          <ModalCloseButton setShow={setShow} show={show} />
           <div className='modal_container'>
             <div className='modal_left flex flex-col'>
               <div className='modal_text'>

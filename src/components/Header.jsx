@@ -6,7 +6,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setHideNav(window.scrollY > window.innerHeight - 400);
+      setHideNav(window.scrollY > window.innerHeight - 600);
     };
 
     window.addEventListener('scroll', handleScroll);

@@ -29,7 +29,7 @@ const About = () => {
         <div className={styles.layertxt}>
           <div className={styles.introText}>
             <div className={styles.title_mobile}>
-              <Fade top>
+              <Fade left>
                 <h2>À PROPOS</h2>
               </Fade>
             </div>

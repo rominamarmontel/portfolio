@@ -69,6 +69,10 @@ button {
   margin: 0;
   box-sizing: border-box;
 }
+.modalClosebutton {
+  font-size: 32px;
+  color: #AAAAAA;
+}
 .wrapper {
 	/* animation: fadein .5s forwards; */
   background-color: transparent;
