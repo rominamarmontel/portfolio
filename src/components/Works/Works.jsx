@@ -26,7 +26,7 @@ const Works = () => {
           <div className={styles.work_container_color}>
             <div className={styles.title}>
               <Fade>
-                <h2>PROJETS</h2>
+                <h3>PROJETS</h3>
               </Fade>
             </div>
           </div>

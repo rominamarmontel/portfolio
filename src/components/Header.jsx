@@ -21,11 +21,11 @@ const Header = () => {
       <ul className={`header_ul ${hideNav ? 'is-animation' : ''}`}>
         <HashLink smooth to='/#about' >
           <li>À PROPOS</li></HashLink>
-        <HashLink smooth to='/#works' >
-          <li>PROJETS</li>
-        </HashLink>
         <HashLink smooth to='/#feature' >
           <li>COMPÉTENCE</li>
+        </HashLink>
+        <HashLink smooth to='/#works' >
+          <li>PROJETS</li>
         </HashLink>
         <HashLink smooth to='/#top'>
           <li><p>WEB DÉVELOPPEUSE FULL-STACK</p></li>

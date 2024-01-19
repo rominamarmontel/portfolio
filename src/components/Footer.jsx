@@ -1,8 +1,9 @@
-import React from 'react'
 
 const Footer = () => {
   return (
-    <small>&copy; 2024 Hiromi Varnier</small>
+    <div className='footer_container'>
+      <small>&copy; 2024 Hiromi Varnier</small>
+    </div>
   )
 }
 

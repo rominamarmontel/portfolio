@@ -1,56 +1,56 @@
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
-import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { BsTelephoneFill } from "react-icons/bs";
+import { IoMdMail } from "react-icons/io";
+import { IoDocumentText } from "react-icons/io5";
 import { GrGithub } from "react-icons/gr";
-import { TfiEmail } from "react-icons/tfi";
-import { AiFillMail } from "react-icons/ai";
-import { useState } from 'react';
-import { VscMail } from "react-icons/vsc";
-import { VscMailRead } from "react-icons/vsc";
+import { FaLinkedinIn } from "react-icons/fa";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div className={styles.Contact}>
       <div className={styles.layer}>
         <div className={styles.contact_container}>
           <div className={styles.contact_image}>
-            <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693477165/portfolio/IMG_1094_cro4mb.jpg' alt='' />
+            <img src="https://res.cloudinary.com/dyu65fpse/image/upload/v1696453139/portfolio/IMG_6175_1_hm7v0k.jpg" alt="" />
           </div>
           <div className={styles.contactItem}>
             <div className={styles.title}>
-              <h2>CONTACT</h2>
+              <Fade>
+                <h3>CONTACT</h3>
+              </Fade>
             </div>
-            <div className={styles.merci}>
-              <div><h3>Merci de me contacter, </h3></div>
-              <div className={styles.link_icons}>
-                <Link to='https://www.linkedin.com/in/hiromi-varnier/' target='_blank' className={styles.linkedin_icons}><TiSocialLinkedinCircular /></Link>
-                <Link to='https://github.com/rominamarmontel/' target='_blank' className={styles.github_icons} ><GrGithub /></Link>
+            <div className={`${styles.wrap} ${styles.between}`}>
+              <div className={styles.description}>
+                <div>
+                  <div className={styles.contactme}>
+                    <div className={styles.icons_container}>
+                      <span className={styles.circle_icons}><BsTelephoneFill /></span>
+                      <p>+33 (0)6 26 61 98 05</p>
+                    </div>
+                  </div>
+                  <div className={styles.icons_container}>
+                    <Link className={styles.circle_icons} to="mailto:romi.varnier@gmail.com">
+                      <IoMdMail />
+                    </Link>
+                    <p>romi.varnier@gmail.com</p>
+                  </div>
+                  <div className={styles.icons_container}>
+                    <Link to='https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing' target='_blank' className={styles.circle_icons}><IoDocumentText /></Link>
+                    <p>Voir mon CV</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className={styles.description}>
-              <div>
-                <div className={styles.contactme}>
-                  <button
-                    onClick={() => window.location = 'mailto:romi.varnier@gmail.com'}
-                    className={styles.mailme}
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                  >
-                    {isHovered ? <VscMailRead className={styles.mail_icons} /> : <VscMail className={styles.mail_icons} />}
-                  </button>
-                </div>
-                <div className={styles.link}>
-                  <Link to='https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing' className={styles.link_cv} target='_blank'>VOIR MON CV</Link>
-                </div>
+              <div className='icons_conatiner'>
+                <Link to='https://www.linkedin.com/in/hiromi-varnier/' target='_blank' className='linkedin_icons'><FaLinkedinIn /></Link>
+                <Link to='https://github.com/rominamarmontel/' target='_blank' className='github_icons'><GrGithub /></Link>
               </div>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

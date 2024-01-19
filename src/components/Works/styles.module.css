@@ -1,19 +1,22 @@
 .Works {
   width: 100%;
   height: auto;
-  border-top: 1px solid  black;
+  border-top: .5px solid  black;
+  padding-bottom: 50px;
 }
 .Works > .layer {
   width: 100%;
   text-align: left;
   margin: 0 auto;
-  /* padding-bottom: 100px; */
+}
+.title h3 {
+  font-size: var(--headline-font-size-medium);
 }
 .worksbox {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid black;
+  border-bottom: .5px solid black;
 }
 .worksbox::before {
   width: 23%;
@@ -26,11 +29,10 @@
   display: block;
   content:"";
 }
-
 .work_container {
   width:33.33%;
   height: 350px;
-  border: 1px solid black;
+  border: .5px solid black;
   background: black !important;
   box-sizing: border-box;
   position: relative;
@@ -42,7 +44,7 @@
 }
 .work_container_color {
   width:33.33%;
-  border: 1px solid black;
+  border: .5px solid black;
   background: transparent;
   box-sizing: border-box;
   display: flex;
@@ -51,12 +53,10 @@
   position: relative;
   z-index: 1;
   transition: .3s;
-  padding-top: 60px;
 }
 .work_container_color2 {
   width:33.33%;
-  border: 1px solid black;
-  background: #ff4e02;
+  border: .5px solid black;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -64,9 +64,7 @@
   position: relative;
   z-index: 1;
   transition: .3s;
-  padding-top: 60px;
 }
-
 .work_container::before, .work_container::after {
   content: "";
   width: 100%;
@@ -81,7 +79,7 @@
   transition: transform ease 2s, opacity 2s;
 }
 .work_container::after {
-  border: 1px solid black;
+  border: .5px solid black;
   box-sizing: border-box;
 }
 .work_container:hover::before {
@@ -124,10 +122,13 @@
 	-webkit-transition:	all 0.2s ease;
 	transition:		all 0.2s ease;
 }
-
-
-
 @media screen and (max-width: 992px) {
+  .Works {
+    padding-bottom: unset;
+  }
+  .title h3 {
+    margin: unset;
+  }
   .caption {
     height: 200px;
     font-size: .9rem;
@@ -143,7 +144,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-bottom: unset;
   }
   .work_container {
     width:100%;
@@ -153,10 +153,6 @@
     width:100%;
     margin: 0 auto;
     padding-top: 0;
-  }
-  .work_container_color h2 {
-    padding: 0;
-    margin: 0;
   }
   .work_container_color2 {
     display: none;

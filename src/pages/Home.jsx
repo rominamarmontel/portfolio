@@ -4,6 +4,7 @@ import Top from '../components/Top'
 import Contact from '../components/Contact/Contact'
 import Feature from '../components/Feature/Feature'
 import ScrollToTop from '../components/ScrollToTop'
+import History from '../components/History/History'
 
 const Home = () => {
   return (
@@ -15,12 +16,16 @@ const Home = () => {
         <section id='about'>
           <About />
         </section>
-        <section id='works'>
-          <Works />
-        </section>
         <section id='feature'>
           <Feature />
         </section>
+        <section id='history'>
+          <History />
+        </section>
+        <section id='works'>
+          <Works />
+        </section>
+
         <Contact />
       </div>
       <ScrollToTop />
