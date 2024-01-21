@@ -1,14 +1,14 @@
 import styles from './styles.module.css'
-import React, { useState } from "react";
-import ModalInvoice from '../../pages/ModalInvoice';
-import ModalImperNext from '../../pages/ModalImperNext';
-import ModalMuun from '../../pages/ModalMuun';
-import ModalImper from '../../pages/ModalImper';
-import ModalKanraku from '../../pages/ModalKanraku';
-import ModalExquisite from '../../pages/ModalExquisite';
-import ModalMonkey from '../../pages/ModalMonkey';
-import { Fade } from "react-awesome-reveal";
-import { useLanguage } from '../LanguageContext';
+import React, { useState } from "react"
+import ModalInvoice from '../../pages/ModalInvoice'
+import ModalImperNext from '../../pages/ModalImperNext'
+import ModalMuun from '../../pages/ModalMuun'
+import ModalImper from '../../pages/ModalImper'
+import ModalKanraku from '../../pages/ModalKanraku'
+import ModalExquisite from '../../pages/ModalExquisite'
+import ModalMonkey from '../../pages/ModalMonkey'
+import { Fade } from "react-awesome-reveal"
+import { useLanguage } from '../LanguageContext'
 
 const Works = () => {
   const [showInvoice, setShowInvoice] = useState(false)

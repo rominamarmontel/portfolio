@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BiChevronUpCircle } from "react-icons/bi";
+import { BiChevronUpCircle } from "react-icons/bi"
 
 const PAGE_Y_OFFSET = 500
 

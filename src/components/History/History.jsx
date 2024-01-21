@@ -1,26 +1,26 @@
-import React, { useEffect, useRef } from 'react';
-import styles from './styles.module.css';
-import { Fade } from "react-awesome-reveal";
-import { useLanguage } from '../LanguageContext';
+import React, { useEffect, useRef } from 'react'
+import styles from './styles.module.css'
+import { Fade } from "react-awesome-reveal"
+import { useLanguage } from '../LanguageContext'
 
 const History = () => {
-  const aboutRef = useRef();
+  const aboutRef = useRef()
   const { isEnglish } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
       if (aboutRef.current) {
-        const scrollY = window.scrollY || window.pageYOffset;
-        const aboutTop = aboutRef.current.offsetTop;
-        const threshold = window.innerHeight * 0.8;
+        const scrollY = window.scrollY || window.pageYOffset
+        const aboutTop = aboutRef.current.offsetTop
+        const threshold = window.innerHeight * 0.8
         if (scrollY > aboutTop - threshold) {
-          aboutRef.current.classList.add(styles.visible);
+          aboutRef.current.classList.add(styles.visible)
         }
       }
     }
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 

@@ -25,7 +25,6 @@ const Home = () => {
         <section id='works'>
           <Works />
         </section>
-
         <Contact />
       </div>
       <ScrollToTop />

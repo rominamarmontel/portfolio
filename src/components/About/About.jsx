@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import styles from './styles.module.css'
 import { Fade } from "react-awesome-reveal"
-import { useLanguage } from '../LanguageContext';
+import { useLanguage } from '../LanguageContext'
 
 const About = () => {
   const aboutRef = useRef()
@@ -11,7 +11,7 @@ const About = () => {
       if (aboutRef.current) {
         const scrollY = window.scrollY || window.pageYOffset
         const aboutTop = aboutRef.current.offsetTop
-        const threshold = window.innerHeight * 0.8;
+        const threshold = window.innerHeight * 0.8
         if (scrollY > aboutTop - threshold) {
           aboutRef.current.classList.add(styles.visible)
         }
@@ -46,7 +46,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

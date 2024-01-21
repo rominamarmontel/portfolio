@@ -1,6 +1,5 @@
 import "./styles.css";
 
-
 export const ToggleButton = ({ open, controls, label, onClick }) => {
   return (
     <button

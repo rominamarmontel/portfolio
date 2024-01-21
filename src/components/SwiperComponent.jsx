@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import { useLanguage } from './LanguageContext';
+import { useEffect, useState } from 'react'
+import { useLanguage } from './LanguageContext'
 
 const SwiperComponent = ({ images, texts, textsEn }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -14,12 +14,12 @@ const SwiperComponent = ({ images, texts, textsEn }) => {
     if (imageCount >= 2) {
       const interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageCount)
-      }, 3000);
+      }, 3000)
       return () => {
-        clearInterval(interval);
+        clearInterval(interval)
       };
     }
-  }, [imageCount]);
+  }, [imageCount])
 
   useEffect(() => {
     if (textCount >= 1 || textCountEn >= 1) {
@@ -56,6 +56,6 @@ const SwiperComponent = ({ images, texts, textsEn }) => {
         </div>
       </div>
     </div>
-  );
-};
-export default SwiperComponent;
+  )
+}
+export default SwiperComponent

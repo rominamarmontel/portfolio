@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { SlClose } from "react-icons/sl";
+import React, { useEffect } from 'react'
+import { SlClose } from "react-icons/sl"
 
 const PAGE_Y_OFFSET = 500
 

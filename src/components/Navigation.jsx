@@ -1,10 +1,10 @@
-import "./styles.css";
-import { HashLink } from 'react-router-hash-link';
+import "./styles.css"
+import { HashLink } from 'react-router-hash-link'
 
 export const Navigation = ({ open, id, onClose }) => {
   const handleLinkClick = () => {
-    onClose();
-  };
+    onClose()
+  }
   return (
     <>
       <nav id={id} aria-hidden={!open} className="navigation">

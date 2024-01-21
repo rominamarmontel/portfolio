@@ -1,4 +1,4 @@
-import SwiperComponent from './SwiperComponent';
+import SwiperComponent from './SwiperComponent'
 
 const Top = () => {
   const images = [

@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import { HashLink } from 'react-router-hash-link';
-import { useLanguage } from './LanguageContext';
+import React, { useState, useEffect } from 'react'
+import { HashLink } from 'react-router-hash-link'
+import { useLanguage } from './LanguageContext'
 
 const Header = () => {
-  const [hideNav, setHideNav] = useState(false);
-  const { toggleLanguage, isEnglish } = useLanguage();
+  const [hideNav, setHideNav] = useState(false)
+  const { toggleLanguage, isEnglish } = useLanguage()
 
   const handleToggleClick = () => {
-    toggleLanguage();
-    const checkbox = document.querySelector('input[name="check"]');
-    checkbox.checked = !checkbox.checked;
-  };
+    toggleLanguage()
+    const checkbox = document.querySelector('input[name="check"]')
+    checkbox.checked = !checkbox.checked
+  }
 
   useEffect(() => {
     const handleScroll = () => {
       setHideNav(window.scrollY > window.innerHeight - 600)
     }
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
@@ -44,7 +44,7 @@ const Header = () => {
         </HashLink>
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

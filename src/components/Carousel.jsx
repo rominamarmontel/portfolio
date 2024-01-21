@@ -1,44 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 
 const Carousel = ({ children }) => {
-  const [counter, setCounter] = useState(1);
-  const [pause, setPause] = useState(false);
+  const [counter, setCounter] = useState(1)
+  const [pause, setPause] = useState(false)
   const content = children;
 
   const handleNext = () => {
     if (counter !== content.length) {
-      setCounter(counter + 1);
+      setCounter(counter + 1)
     } else {
-      setCounter(1);
+      setCounter(1)
     }
   };
 
   const handlePre = () => {
     if (counter !== 1) {
-      setCounter(counter - 1);
+      setCounter(counter - 1)
     } else {
-      setCounter(content.length);
+      setCounter(content.length)
     }
   };
 
   const handlePage = page => {
-    setCounter(page);
+    setCounter(page)
   };
 
   const handleMouse = () => {
-    setPause(!pause);
+    setPause(!pause)
   };
 
   useEffect(() => {
     let interval = setInterval(() => {
       if (!pause) {
-        handleNext();
+        handleNext()
       } else {
-        clearInterval(interval);
+        clearInterval(interval)
       }
-    }, 3000);
-    return () => clearInterval(interval);
-  });
+    }, 3000)
+    return () => clearInterval(interval)
+  })
 
   return (
     <div className="Carousel">
@@ -74,7 +74,7 @@ const Carousel = ({ children }) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Carousel;
+export default Carousel

@@ -51,7 +51,6 @@ const Feature = () => {
                   <div className={styles.box_backend}>
                     <div className={`${styles.fadeIn} ${styles.delay3}`}><p>MongoDB / MySQL / Prisma</p></div>
                   </div>
-
                 </div>
               </div>
             </div>

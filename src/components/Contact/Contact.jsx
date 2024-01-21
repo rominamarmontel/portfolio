@@ -40,7 +40,7 @@ const Contact = () => {
                     <p>romi.varnier@gmail.com</p>
                   </div>
                   <div className={styles.icons_container}>
-                    <Link to={isEnglish ? '' : 'https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing'} target='_blank' className={styles.circle_icons}><IoDocumentText /></Link>
+                    <Link to={isEnglish ? 'https://drive.google.com/file/d/1qeX4NoqEgZ8tedpb7MpwOZVeG1tooGhx/view?usp=sharing' : 'https://drive.google.com/file/d/1-72OeqYV6LsYTnaKSoDEQyM23ORVb7bg/view'} target='_blank' className={styles.circle_icons}><IoDocumentText /></Link>
                     <p>{isEnglish ? 'See my CV' : 'Voir mon CV'}</p>
                   </div>
                 </div>
