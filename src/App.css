@@ -231,6 +231,7 @@ header {
   filter: blur(5px);
   filter: brightness(1) contrast(80%) opacity(0.8);
 }
+
 /* text-on-image */
 .text-on-image {
   max-width: 30%;
@@ -265,15 +266,16 @@ header {
   letter-spacing: 0px;
   text-align: left;
 }
-p.slide-in.next-text, p.slide-in.current-text {
-  opacity: 0;
-  transform: translateY(100%);
-  animation: slideIn 0.3s ease-out forwards;
+p.slide-in.current-text {
+  animation: slideIn-01 3s 1;
+}
+p.slide-in.next-text {
+  animation: slideIn-02 3s infinite;
 }
 
-@keyframes slideIn {
+@keyframes slideIn-01 {
   0% {
-    transform: translateY(100%);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
@@ -281,6 +283,17 @@ p.slide-in.next-text, p.slide-in.current-text {
     opacity: 1;
   }
 }
+@keyframes slideIn-02 {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 /* ------------------------------------ Contact ------------------------------------ */
 .icons_conatiner {
