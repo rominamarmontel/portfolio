@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { PiLinkSimpleFill } from 'react-icons/pi'
-import ModalCloseButton from '../components/ModalCloseButton';
+import ModalCloseButton from '../components/ModalCloseButton'
+import { useLanguage } from '../components/LanguageContext'
 
 const ModalMuun = ({ show, setShow }) => {
+  const { isEnglish } = useLanguage()
+
   if (show) {
     return (
       <div id='overlay'>
@@ -21,7 +24,7 @@ const ModalMuun = ({ show, setShow }) => {
                 <div className='block fadeIn1500ms'>
                   <p><span>TECHNOLOGIE : </span>WordPress, Elementor</p>
                   <p><span>CI/CD : </span>Vercel</p>
-                  <p>J'ai ajouté une version en japonais à la boutique en ligne existante "Muuñ". C'était ma première expérience avec le plugin Elementor pour le logiciel de gestion de contenu WordPress.</p>
+                  <p>{isEnglish ? `I added a Japanese version to the existing online store "Muuñ." It was my first experience with the Elementor plugin for the WordPress content management system.` : `J'ai ajouté une version en japonais à la boutique en ligne existante "Muuñ". C'était ma première expérience avec le plugin Elementor pour le logiciel de gestion de contenu WordPress.`}</p>
                 </div>
               </div>
               <div className='modal_imagebox'>

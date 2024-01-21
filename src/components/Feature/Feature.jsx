@@ -1,9 +1,9 @@
 import styles from './styles.module.css'
-import { useEffect, useRef } from 'react';
-import { Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal"
+import { useLanguage } from '../LanguageContext'
 
 const Feature = () => {
-
+  const { isEnglish } = useLanguage()
 
   return (
     <div className={styles.Feature}>
@@ -15,7 +15,7 @@ const Feature = () => {
           <div className={styles.feature_container}>
             <div className={styles.title}>
               <Fade>
-                <h3>COMPÉTENCE</h3>
+                <h3>{isEnglish ? 'SKILLS' : "COMPÉTENCE"}</h3>
               </Fade>
             </div>
             <div className={styles.items}>

@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa'
 import { PiLinkSimpleFill } from 'react-icons/pi'
-import ModalCloseButton from '../components/ModalCloseButton';
+import ModalCloseButton from '../components/ModalCloseButton'
+import { useLanguage } from '../components/LanguageContext'
 
 const ModalImper = ({ show, setShow }) => {
+  const { isEnglish } = useLanguage()
+
   if (show) {
     return (
       <div id='overlay'>
@@ -25,7 +28,7 @@ const ModalImper = ({ show, setShow }) => {
                 <div className='block fadeIn1500ms'>
                   <p><span>TECHNOLOGIE : </span>NodeJS, ExpressJS, ReactJS, MongoDB, HTML, CSS, Mongoose, Postman, Cloudinary</p>
                   <p><span>CI/CD : </span>Vercel/Render</p>
-                  <p>Après avoir obtenu mon diplôme d'Ironhack, j'ai créé un site web pour l'association 'impermanence films'. Le site utilise React en frontend, Express en backend et MongoDB comme base de données. Il présente des introductions aux films produits et est affiché en versions française et anglaise avec un design réactif. De plus, il permet aux administrateurs de publier de nouveaux films.</p>
+                  <p>{isEnglish ? `After graduating from Ironhack, I created a website for the 'Impermanence Films' association. The site uses React on the frontend, Express on the backend, and MongoDB as the database. It showcases introductions to the produced films and is displayed in both French and English versions with a responsive design. Additionally, it allows administrators to publish new films.` : `Après avoir obtenu mon diplôme d'Ironhack, j'ai créé un site web pour l'association 'impermanence films'. Le site utilise React en frontend, Express en backend et MongoDB comme base de données. Il présente des introductions aux films produits et est affiché en versions française et anglaise avec un design réactif. De plus, il permet aux administrateurs de publier de nouveaux films.`}</p>
                 </div>
               </div>
               <div className='modal_imagebox'>
@@ -44,8 +47,8 @@ const ModalImper = ({ show, setShow }) => {
                 <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1693408715/portfolio/252614548-bc7ab2f0-38fd-431a-a9eb-6894d3e5fa83_zb2fle.png' alt='' />
               </div>
               <div className='modal_text'>
-                <p>Résponsive, authentification pour les
-                  administrateurs, API, opérations CRUD, bascule avec ObjectId pour deux langues. Mettre en œuvre la fonctionnalité d'inscription et de connexion pour le panneau d'administration. J'ai essayé d'utiliser le package npm @mui/x-data-grid et j'ai essayé d'utiliser SASS au lieu de CSS pour améliorer la lisibilité de l'affichage de la liste des films.En utilisant React, React Hooks et axios, effectuez des opérations CRUD pour créer de nouveaux films et mettre à jour les films existants.</p>
+                <p>{isEnglish ? `Responsive design, authentication for administrators, API, CRUD operations, toggling with ObjectId for two languages. Implementing the registration and login functionality for the admin panel. I tried using the npm package @mui/x-data-grid and attempted to use SASS instead of CSS to enhance the display readability of the film list. Using React, React Hooks, and axios, perform CRUD operations to create new films and update existing films.` : `Résponsive, authentification pour les
+                  administrateurs, API, opérations CRUD, bascule avec ObjectId pour deux langues. Mettre en œuvre la fonctionnalité d'inscription et de connexion pour le panneau d'administration. J'ai essayé d'utiliser le package npm @mui/x-data-grid et j'ai essayé d'utiliser SASS au lieu de CSS pour améliorer la lisibilité de l'affichage de la liste des films.En utilisant React, React Hooks et axios, effectuez des opérations CRUD pour créer de nouveaux films et mettre à jour les films existants.`}</p>
               </div>
             </div>
           </div>

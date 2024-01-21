@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa'
 import { PiLinkSimpleFill } from 'react-icons/pi'
-import ModalCloseButton from '../components/ModalCloseButton';
+import ModalCloseButton from '../components/ModalCloseButton'
+import { useLanguage } from '../components/LanguageContext'
 
 const ModalKanraku = ({ show, setShow }) => {
+  const { isEnglish } = useLanguage()
+
   if (show) {
     return (
       <div id='overlay'>
@@ -26,7 +29,7 @@ const ModalKanraku = ({ show, setShow }) => {
                   <p><span>TECHNOLOGIE : </span>NodeJS, ExpressJS, ReactJS, MongoDB, HTML,
                     CSS,Mongoose, Postman, Cloudinary</p>
                   <p><span>CI/CD : </span>Netlify/Render</p>
-                  <p>Pour le projet final chez Ironhack, j'ai choisi de travailler sur une tâche d'e-commerce. J'ai utilisé React pour le frontend, Express pour le backend, et MongoDB pour la base de données. Après l'obtention de mon diplôme, j'ai complètement redessiné la version originale en anglais et créé une nouvelle version en japonais. Bien que je n'aie pas eu beaucoup de temps au départ, j'ai saisi cette occasion pour repenser et améliorer la conception, y compris le panneau d'administration, le panier d'achat et le processus de paiement.</p>
+                  <p>{isEnglish ? `For the final project at Ironhack, I chose to work on an e-commerce task. I used React for the frontend, Express for the backend, and MongoDB for the database. After graduating, I completely redesigned the original English version and created a new version in Japanese. Although I didn't have much time initially, I seized this opportunity to rethink and enhance the design, including the admin panel, shopping cart, and payment process.` : `Pour le projet final chez Ironhack, j'ai choisi de travailler sur une tâche d'e-commerce. J'ai utilisé React pour le frontend, Express pour le backend, et MongoDB pour la base de données. Après l'obtention de mon diplôme, j'ai complètement redessiné la version originale en anglais et créé une nouvelle version en japonais. Bien que je n'aie pas eu beaucoup de temps au départ, j'ai saisi cette occasion pour repenser et améliorer la conception, y compris le panneau d'administration, le panier d'achat et le processus de paiement.`}</p>
                 </div>
               </div>
               <div className='modal_imagebox'>
@@ -46,10 +49,7 @@ const ModalKanraku = ({ show, setShow }) => {
               </div>
 
               <div className='modal_text'>
-                <p>Lorsque l'utilisateur ajoute des articles au panier en spécifiant la quantité, il est invité à se connecter pour l'authentification. Après s'être connecté, les informations du panier de l'utilisateur sont affichées. La partie la plus difficile de ce projet a été de différencier entre les administrateurs, les utilisateurs réguliers et les utilisateurs connectés à des fins d'authentification. Les utilisateurs connectés peuvent effectuer diverses actions telles que la suppression ou la mise à jour de leurs profils, adresses de livraison et le contenu de leur panier grâce à des appels API.Le site e-commerce (version japonaise). API,
-                  opérations CRUD, composants et middleware,
-                  mise en œuvre de l'authentification pour les
-                  administrateurs et les utilisateurs.</p>
+                <p>{isEnglish ? `` : `When the user adds items to the cart by specifying the quantity, they are prompted to log in for authentication. After logging in, the user's cart information is displayed. The most challenging part of this project was differentiating between administrators, regular users, and authenticated users for authentication purposes. Authenticated users can perform various actions such as deleting or updating their profiles, delivery addresses, and cart content through API calls. The e-commerce site (Japanese version). API, CRUD operations, components and middleware, implementation of authentication for administrators and users.`}</p>
               </div>
             </div>
           </div>

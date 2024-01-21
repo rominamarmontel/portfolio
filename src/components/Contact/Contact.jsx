@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
-import { BsTelephoneFill } from "react-icons/bs";
-import { IoMdMail } from "react-icons/io";
-import { IoDocumentText } from "react-icons/io5";
-import { GrGithub } from "react-icons/gr";
-import { FaLinkedinIn } from "react-icons/fa";
-import { Fade } from "react-awesome-reveal";
+import { BsTelephoneFill } from "react-icons/bs"
+import { IoMdMail } from "react-icons/io"
+import { IoDocumentText } from "react-icons/io5"
+import { GrGithub } from "react-icons/gr"
+import { FaLinkedinIn } from "react-icons/fa"
+import { Fade } from "react-awesome-reveal"
+import { useLanguage } from '../LanguageContext'
 
 const Contact = () => {
+  const { isEnglish } = useLanguage()
+
   return (
     <div className={styles.Contact}>
       <div className={styles.layer}>
@@ -37,8 +40,8 @@ const Contact = () => {
                     <p>romi.varnier@gmail.com</p>
                   </div>
                   <div className={styles.icons_container}>
-                    <Link to='https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing' target='_blank' className={styles.circle_icons}><IoDocumentText /></Link>
-                    <p>Voir mon CV</p>
+                    <Link to={isEnglish ? '' : 'https://drive.google.com/file/d/1JZJQaiw-qAtF-l4Vzk6wIyiLWl1nwCA_/view?usp=sharing'} target='_blank' className={styles.circle_icons}><IoDocumentText /></Link>
+                    <p>{isEnglish ? 'See my CV' : 'Voir mon CV'}</p>
                   </div>
                 </div>
               </div>

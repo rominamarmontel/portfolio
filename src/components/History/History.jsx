@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './styles.module.css';
 import { Fade } from "react-awesome-reveal";
+import { useLanguage } from '../LanguageContext';
 
 const History = () => {
   const aboutRef = useRef();
+  const { isEnglish } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,18 +34,18 @@ const History = () => {
           <div className={styles.introText}>
             <div className={styles.title}>
               <Fade>
-                <h3>PARCOURS</h3>
+                <h3>{isEnglish ? 'EDUCATION' : 'PARCOURS'}</h3>
               </Fade>
             </div>
             <div className={`${styles.school} ${styles.fadeIn}`} ref={aboutRef}>
               <div className={styles.description}>
-                <p ><span className={styles.bold}>Développeur Web Full-Stack</span>
+                <p ><span className={styles.bold}>{isEnglish ? 'Web Developer Full-Stack' : 'Développeur Web Full-Stack'}</span>
                   <br />
                   <span className={styles.italic}>@IRONHACK PARIS,
                     Jan/2023-Mar/2023</span>
                 </p>
-                <p className={styles.gray}>Développement entier d’un site (React.JS, Vite, Node.JS, Express.JS, MongoDB)</p>
-                <p className={styles.gray}>Développement d’évolutions des sites (HTML, CSS, JavaScript)</p>
+                <p className={styles.gray}>{isEnglish ? 'Complete development of a website (React.JS, Vite, Node.JS, Express.JS, MongoDB)' : "Développement entier d’un site (React.JS, Vite, Node.JS, Express.JS, MongoDB)"}</p>
+                <p className={styles.gray}>{isEnglish ? 'Development of site enhancements (HTML, CSS, JavaScript)' : 'Développement d’évolutions des sites (HTML, CSS, JavaScript)'}</p>
               </div>
 
               <div className={styles.description}>
@@ -51,9 +53,9 @@ const History = () => {
                   <span className={styles.italic}>@HOLBERTON SCHOOL PARIS,
                     Jan/2022-Nov/2022</span>
                 </p>
-                <p className={styles.gray}>Développement entier d’un site (React.JS / Redux / Node.JS / Express.JS / MongoDB)</p>
-                <p className={styles.gray}>Développement d’évolutions des sites (Python / MySQL)</p>
-                <p className={styles.gray}>Développement d’évolutions des sites (C)</p>
+                <p className={styles.gray}>{isEnglish ? 'Complete development of a website (React.JS / Redux / Node.JS / Express.JS / MongoDB)' : 'Développement entier d’un site (React.JS / Redux / Node.JS / Express.JS / MongoDB)'}</p>
+                <p className={styles.gray}>{isEnglish ? 'Development of site enhancements (Python / MySQL)' : 'Développement d’évolutions des sites (Python / MySQL)'}</p>
+                <p className={styles.gray}>{isEnglish ? 'Development of site enhancements (C)' : 'Développement d’évolutions des sites (C)'}</p>
                 <p className={styles.gray}>BASH, Git, Linux, Ubuntu</p>
               </div>
             </div>

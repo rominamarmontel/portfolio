@@ -14,9 +14,15 @@ const Top = () => {
     'développe des applications web pour des entreprises',
     'est passionnée par JavaScript, NodeJs, ReactJs, TypeScript ♥',
   ]
+  const textsEn = [
+    'was born in Fukuoka, Japan',
+    'speaks JAPANESE, FRENCH, ENGLISH',
+    'develops web applications for the companies',
+    'has a big passion for JavaScript, NodeJS, ReactJS, TypeScript ♥'
+  ]
 
   return (
-    <SwiperComponent images={images} texts={texts} />
+    <SwiperComponent images={images} texts={texts} textsEn={textsEn} />
   )
 }
 

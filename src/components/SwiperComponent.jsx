@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react';
+import { useLanguage } from './LanguageContext';
 
-const SwiperComponent = ({ images, texts }) => {
+const SwiperComponent = ({ images, texts, textsEn }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [currentTextIndex, setCurrentTextIndex] = useState(0)
+  const [currentTextEnIndex, setCurrentTextEnIndex] = useState(0)
   const imageCount = images.length
   const textCount = texts.length
+  const textCountEn = textsEn.length
+  const { isEnglish } = useLanguage()
 
   useEffect(() => {
     if (imageCount >= 2) {
@@ -18,15 +22,16 @@ const SwiperComponent = ({ images, texts }) => {
   }, [imageCount]);
 
   useEffect(() => {
-    if (textCount >= 1) {
+    if (textCount >= 1 || textCountEn >= 1) {
       const interval = setInterval(() => {
         setCurrentTextIndex((prevIndex) => (prevIndex + 1) % textCount)
+        setCurrentTextEnIndex((prevIndex) => (prevIndex + 1) % textCountEn)
       }, 3000)
       return () => {
         clearInterval(interval)
       }
     }
-  }, [textCount])
+  }, [textCount, textCountEn])
 
   return (
     <div className='top'>
@@ -45,8 +50,8 @@ const SwiperComponent = ({ images, texts }) => {
       </div>
       <div className='banner'>
         <div className='banner_container'>
-          <p className={`slide-in ${currentTextIndex === 0 ? 'current-text' : 'next-text'}`}>
-            {texts[currentTextIndex]}
+          <p className={`slide-in ${currentTextIndex === 0 || currentTextEnIndex === 0 ? 'current-text' : 'next-text'}`}>
+            {isEnglish ? textsEn[currentTextEnIndex] : texts[currentTextIndex]}
           </p>
         </div>
       </div>
