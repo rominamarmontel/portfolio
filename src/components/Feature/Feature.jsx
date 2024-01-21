@@ -23,10 +23,10 @@ const Feature = () => {
                 <h3>FRONT-END</h3>
                 <div className={styles.item_frontend}>
                   <div className={styles.box_frontend}>
-                    <div className={`${styles.fadeIn} ${styles.delay1}`}><p className={styles.fadeIn}>JavaScript / CSS / HTML</p></div>
+                    <div className={`${styles.fadeIn} ${styles.delay1}`}><p className={styles.fadeIn}>JavaScript / TypeScript</p></div>
                   </div>
                   <div className={styles.box_frontend}>
-                    <div className={`${styles.fadeIn} ${styles.delay2}`}><p className={styles.fadeIn}>ReactJs / TypeScript</p></div>
+                    <div className={`${styles.fadeIn} ${styles.delay2}`}><p className={styles.fadeIn}>ReactJs</p></div>
                   </div>
                   <div className={styles.box_frontend}>
                     <div className={`${styles.fadeIn} ${styles.delay4}`}><p className={styles.fadeIn}>NextJs</p></div>
