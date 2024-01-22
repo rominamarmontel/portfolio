@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { useLanguage } from './LanguageContext'
+import { ToggleButton } from "./ToggleButton"
+import { Navigation } from './Navigation'
 
 const Header = () => {
   const [hideNav, setHideNav] = useState(false)
   const { toggleLanguage, isEnglish } = useLanguage()
+  const [open, setOpen] = useState(false);
+  const toggleFunction = () => {
+    setOpen((prevState) => !prevState)
+  }
 
   const handleToggleClick = () => {
     toggleLanguage()
@@ -43,6 +49,17 @@ const Header = () => {
           <li><p>{isEnglish ? 'FULL-STACK WEB DEVELOPER' : 'WEB DÉVELOPPEUSE FULL-STACK'}</p></li>
         </HashLink>
       </ul>
+      {window.innerWidth <= 992 && (
+        <>
+          <ToggleButton
+            open={open}
+            controls="navigation"
+            label="メニューを開きます"
+            onClick={toggleFunction}
+          />
+          <Navigation id="navigation" open={open} />
+        </>
+      )}
     </div>
   )
 }

@@ -116,77 +116,20 @@
     font-size: var(--headline-font-size-medium) !important;
     margin-bottom: 32px;
   }
-  .merci {
-    display: flex;
-    justify-content: space-between;
+  .contact_container {
+    display: unset;
   }
-  .link_cv {
-    border: 1px solid #333333;
-    text-decoration: none;
-    padding: 8px 20px;
-    color: #333333;
-    font-size: 15px;
-    font-weight: 500;
+  .descriptionA::after {
+    display: none;
   }
-  .link a:hover {
-    background-color: black;
-    color: white;
-  }
-  .wrap {
-    display:flex;
-    flex-flow: column;
-    height: calc(300px - 74px);
-  }
-  .between {
-    justify-content:space-between;
-  }
-  .description {
-    width: 100%;
-  }
-  .description > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-  }
-  .contactme {
-    width: 100%;
-  }
-  .link {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .circle_icons {
-    width: 30px;
-    height: 30px;
-    border: 2px solid black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    transition: all  0.3s ease;
-  }
-  .circle_icons:hover {
-    transform: scale(1.1);
-    color: #e91e63;
-    border-color: #e91e63;
-  }
-  .icons_container {
-    display: flex;
-    align-items: baseline;
-    gap: 1em;
-    text-decoration: none;
-    color: inherit;
+  .descriptionB {
+    display: none;
   }
 }
 @media (max-width: 720px) {}
 @media screen and (max-width: 510px) {
   .Contact .layer {
-    width: 90%;
+    width: 93%;
     margin: 0 auto;
   }
   .contact_container {
@@ -195,13 +138,5 @@
   }
   .contact_image img {
     display: none;
-  }
-  .link_cv {
-    padding: 8px 10px;
-  }
-  .contactItem {
-    width: 100%;
-    margin: 0 auto;
-    height: 300px;
   }
 }

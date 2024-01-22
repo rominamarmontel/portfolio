@@ -10,7 +10,7 @@ export const Navigation = ({ open, id, onClose }) => {
       <nav id={id} aria-hidden={!open} className="navigation">
         <div className="menu">
           <ul>
-            <HashLink to='/portfolio#' onClick={handleLinkClick}>
+            <HashLink to='/' onClick={handleLinkClick}>
               <div className='logo'>
                 <h3>HIROMI VARN<span>I</span>ER</h3>
               </div>
