@@ -19,8 +19,10 @@
   margin-bottom: 36px;
 }
 .competence {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 5rem;
 }
 .competence_image img{
@@ -94,7 +96,11 @@
 /*タブレット*/
 @media screen and (max-width: 1024px) {
   .competence {
+    width: 100%;
     flex-direction: column;
+  }
+  .competence_image {
+    width: 100%;
   }
   .competence_image img {
     width: 100%;
