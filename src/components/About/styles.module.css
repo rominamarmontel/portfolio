@@ -4,14 +4,14 @@
 }
 .layer {
   width: 93%;
-  padding-top: 50px;
+  padding: 64px 0;
   text-align: left;
   margin: 0 auto;
   border-top: 1px solid black;
 }
 .title h3 {
   font-size: var(--headline-font-size-medium);
-  margin-bottom: 32px;
+  margin: 0 0 36px 0;
 }
 .aboutImage img {
   width: 300px;
@@ -47,16 +47,6 @@
 /* ------------------------------------ Responsive ------------------------------------ */
 /*タブレット*/
 @media screen and (max-width: 1024px) {
-  .About {
-    width: 100%;
-    padding-top: 100px;
-  }
-  .layer {
-    border-top: unset;
-  }
-  .title h3 {
-    margin-bottom: unset;
-  }
   .aboutImage img {
     width: 100%;
     height: 500px;
@@ -64,39 +54,15 @@
   .layerText {
     flex-direction: column;
   }
-  .introText {
-    width: 100%;
-    padding: unset;
-  }
-  .description {
-    width: 100%;
-  }
-  .description p {
-    width: 100% !important;
-    padding: 36px 0;
-    padding-top: 36px !important;
-  }
+  
 }
+
 /*モバイル*/
 @media screen and (max-width: 599px) {
   .About {
     padding-top: unset;
-    padding-bottom: unset;
-  }
-  .Introduction > .layer {
-    width: 90%;
-  }
-  .title h2 {
-    display: none;
-  }
-  .title_mobile {
-    display: inline;
-  }
-  .title_mobile h2 {
-    padding: 36px 0 ;
   }
   .introText {
-    display: flex;
     flex-direction: column;
     gap: unset;
   }
@@ -105,16 +71,7 @@
     height: 350px;
   }
   .description {
-    width: 90%;
-    margin: 0 auto;
     padding: unset;
   }
-  .description p {
-    position: relative;
-    margin-bottom: unset;
-    padding: 24px 0 36px 0;
-  }
-  .link_cv {
-    display: none;
-  }
+
 }

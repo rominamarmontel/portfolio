@@ -1,19 +1,22 @@
 .Feature {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .layer {
   width: 93%;
-  padding-top: 50px;
+  padding: 64px 0;
   text-align: left;
   margin: 0 auto;
   border-top: 1px solid black;
 }
 .title h3 {
-  margin-bottom: 0;
+  margin: 0;
   line-height: 1rem;
   font-size: var(--headline-font-size-medium);
+}
+.frontend h3, .backend h3 {
+  font-size: var(--headline-font-size-medium);
+  color: #949494;
+  margin-bottom: 36px;
 }
 .competence {
   display: flex;
@@ -40,11 +43,6 @@
   align-content: space-between;
   width: 100%;
 }
-.frontend h3, .backend h3 {
-  font-size: var(--headline-font-size-medium);
-  color: #949494;
-  margin-bottom: 32px;
-}
 .frontend div, .backend div {
   display: flex;
   flex-direction: column;
@@ -63,12 +61,6 @@
   flex-direction: column;
   justify-content: space-between;
 }
-/* .item_frontend p, .item_backend p {
-  letter-spacing: 0;
-  line-height: 1.4rem;
-  text-align: left;
-  color: black;
-} */
 .fadeIn {
   opacity: 0;
   transform: translateX(-20px);
@@ -101,74 +93,36 @@
 
 /*タブレット*/
 @media screen and (max-width: 1024px) {
-  .Feature {
-    padding-top: unset;
-    padding-bottom: 50px !important;
-  }
-  .layer {
-    margin: 0 auto;
-    border-top: 1px solid black;
-  }
-  .title h3 {
-    margin-bottom: 0;
-    padding: 36px 0;
-  }
   .competence {
-    display: flex;
     flex-direction: column;
-    gap: 2rem;
   }
   .competence_image img {
     width: 100%;
     height: 500px;
   }
-  .feature_container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .items {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding-top: 32px;
-  }
-  .frontend, .backend {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    width: 100%;
+  .title h3 {
+    margin: 0 !important;
   }
   .frontend h3, .backend h3 {
-    margin-bottom: 5px;
-    font-size: 20px;
+    font-size: var(--headline-font-size-medium) !important;
+    margin-bottom: 36px !important;
   }
-
 }
 
 /*モバイル*/
 @media screen and (max-width: 599px) {
-  .layer {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .title h2 {
-    writing-mode: unset;
+  .frontend h3, .backend h3 {
+    font-size: 1.5rem !important;
   }
   .competence {
     flex-direction: column;
-    margin-right: unset;
   }
   .competence_image img {
     width: 100%;
     height: 350px;
   }
   .box_frontend > div, .box_backend > div {
-    border: 1px solid #d5d8db;
     margin: 0 10px 10px 0;
-    text-align:left;
-    padding: 20px 10px 5px 10px;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 5px #d5d8db;
+    padding: 5px 10px;
   }
 }

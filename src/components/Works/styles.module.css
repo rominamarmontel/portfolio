@@ -1,8 +1,6 @@
 .Works {
   width: 100%;
   height: auto;
-  border-top: .5px solid  black;
-  padding-bottom: 50px;
 }
 .Works > .layer {
   width: 100%;
@@ -127,7 +125,7 @@
 /*タブレット*/
 @media screen and (max-width: 1024px) {
   .Works {
-    padding-bottom: unset;
+    padding: 64px 0;
   }
   .title h3 {
     margin: unset;

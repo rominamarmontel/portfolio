@@ -14,7 +14,7 @@ export const Navigation = ({ open, id, onClose }) => {
     <>
       <nav id={id} aria-hidden={!open} className="navigation">
         <div className="menu">
-          <HashLink to='/' onClick={handleLinkClick}>
+          <HashLink to='/#top' onClick={handleLinkClick}>
             <div className='logo_image'>
               <img src='https://res.cloudinary.com/dyu65fpse/image/upload/v1705312051/logo_hiromi_b1mycv.png' alt='logo' />
             </div>

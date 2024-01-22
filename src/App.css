@@ -98,7 +98,6 @@ button {
   color: #AAAAAA;
 }
 .wrapper {
-	/* animation: fadein .5s forwards; */
   background-color: transparent;
   width: 100%;
 }
@@ -183,7 +182,7 @@ header {
   line-height: 50px;
 }
 
-
+/* toggle Language */
 .toggle {
   position: relative;
   width: 38px;
@@ -196,7 +195,6 @@ header {
 .toggle input[type=checkbox] {
   display: none;
 }
-
 .toggle:before {
   content: "";
   position: absolute;
@@ -230,16 +228,14 @@ header {
   left: 22px;
   box-shadow: 0 9px 28px -6px rgba(0, 0, 0, 0.5);
 }
-
-
-/* Home */
+/* ------------------------------------ HOME ------------------------------------ */
 .home_container {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-/* ------------------------------------ Top ------------------------------------ */
+/* ------------------------------------ TOP ------------------------------------ */
 .top {
   width: 100%;
   height: auto;
@@ -285,7 +281,6 @@ header {
   filter: blur(5px);
   filter: brightness(1) contrast(80%) opacity(0.8);
 }
-
 /* text-on-image */
 .text-on-image {
   max-width: 30%;
@@ -299,7 +294,6 @@ header {
 .text-on-image img {
   width: 400px;
 }
-
 /* banner */
 .banner {
   position: absolute;
@@ -349,7 +343,7 @@ p.slide-in.next-text {
 }
 
 
-/* ------------------------------------ Contact ------------------------------------ */
+/* ----------------------------- LinkedIn & GitHub ------------------------------- */
 .icons_conatiner {
   display: flex;
   align-items: center;
@@ -446,14 +440,12 @@ footer {
   animation-delay: 500ms;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  /* transform: translateY(50px); */
   opacity: 0;
 }
 @keyframes fadeIn1500ms {
   0% {
   }
   100% {
-      /* transform: translateY(0); */
       opacity: 1;
   }
 }
@@ -497,8 +489,15 @@ footer {
   transition: unset;
 }
 
+.scrollTop {
+  z-index: 3;
+  position: fixed;
+  bottom: 20;
+  right: 15;
+}
+
 /* ------------------------------------ Responsive ------------------------------------ */
-/*タブレット*/
+/*******************タブレット******************/
 @media screen and (max-width: 1024px) {
 /*  header  */
 .header_ul {
@@ -551,18 +550,15 @@ footer {
   left: 25%;
   z-index: 1;
 }
-
-/* hamburger Menu */
-
 /* banner */
 .banner {
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   left: 0px;
 }
 .banner_container {
   border-left: unset;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 /* Modal */
 .modal_container {
@@ -579,7 +575,7 @@ footer {
 }
 }
 
-/*モバイル*/
+/*************モバイル****************/
 @media screen and (max-width: 599px) {
 /*  header  */
 .header_ul {
@@ -620,12 +616,11 @@ footer {
 }
   /* banner */
 .banner {
-  bottom: 0px;
+  bottom: 20px;
   left: 0px;
 }
 .banner_container {
   border-left: unset;
-  padding-left: 20px;
 }
 
 /* Modal */
@@ -641,5 +636,8 @@ footer {
 .modal_right, .modal_left {
   width: 100%;
 }
-
+.icons_conatiner {
+  display: flex;
+  justify-content: center;
+}
 }
