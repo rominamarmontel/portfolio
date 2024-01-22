@@ -353,7 +353,8 @@ p.slide-in.next-text {
 .icons_conatiner {
   display: flex;
   align-items: center;
-  gap: .5em;
+  gap: 1em;
+  padding-top: 30px;
 }
 .linkedin_icons {
   font-size: 24px;
@@ -362,6 +363,11 @@ p.slide-in.next-text {
 .github_icons {
   font-size: 24px;
   color:black;
+}
+.linkedin_icons:hover, .github_icons:hover {
+  transform: scale(1.1);
+  color: #e91e63;
+  border-color: #e91e63;
 }
 
 /* ------------------------------------ footer ------------------------------------ */

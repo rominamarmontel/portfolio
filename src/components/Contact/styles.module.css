@@ -11,7 +11,7 @@
   display: flex;
   gap: 5rem;
 }
-.contact_image img{
+.contact_image img {
   width: 300px;
   height: 300px;
 }
@@ -19,41 +19,36 @@
   font-size: var(--headline-font-size-medium) !important;
   margin-bottom: 32px;
 }
-.merci {
+.contactItem {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.link_cv {
-  border: 1px solid #333333;
-  text-decoration: none;
-  padding: 8px 20px;
-  color: #333333;
-  font-size: 15px;
-  font-weight: 500;
-}
-.link a:hover {
-  background-color: black;
-  color: white;
-}
 .wrap {
-  display:flex;
-  flex-flow: column;
-  height: calc(300px - 74px);
+  width: 100%;
+  display: flex;
 }
 .between {
   justify-content:space-between;
 }
-.description {
+.descriptionA {
   width: 100%;
+  padding-right: 50px;
 }
-.description > div {
+.descriptionB {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.descriptionA > div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
-}
-.contactme {
-  width: 100%;
 }
 .link {
   width: 100%;
@@ -62,30 +57,52 @@
   align-items: center;
 }
 .circle_icons {
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
-  border-radius: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: circle;
   text-decoration: none;
   color: black;
   transition: all  0.3s ease;
 }
-.circle_icons:hover {
+.mail_icons, .tel_icons, .doc_icons {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 15px;
+}
+.mail_icons:hover, .circle_icons p:hover, .doc_icons:hover, .tel_icons:hover {
   transform: scale(1.1);
   color: #e91e63;
   border-color: #e91e63;
 }
 .icons_container {
+  width: 100%;
   display: flex;
   align-items: baseline;
-  gap: 1em;
   text-decoration: none;
   color: inherit;
+  margin-top: 15px;
 }
 
+.descriptionA, .descriptionB {
+  flex-grow: 1;
+}
+.descriptionA {
+  position: relative;
+	margin-right: 3rem;
+}
+.descriptionA::after {
+  position: absolute;
+	top: 0;
+	left: 100%;
+	margin: 0;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background-color: #333;
+}
 @media screen and (max-width: 960px) {
   .contact_container {
     display: flex;
