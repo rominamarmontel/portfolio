@@ -75,8 +75,8 @@
 }
 .circle_icons:hover {
   transform: scale(1.1);
-  color: palevioletred;
-  border-color: palevioletred;
+  color: #e91e63;
+  border-color: #e91e63;
 }
 .icons_container {
   display: flex;
@@ -155,8 +155,8 @@
   }
   .circle_icons:hover {
     transform: scale(1.1);
-    color: palevioletred;
-    border-color: palevioletred;
+    color: #e91e63;
+    border-color: #e91e63;
   }
   .icons_container {
     display: flex;

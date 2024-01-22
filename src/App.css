@@ -218,13 +218,13 @@ header {
   height: 12px;
   display: block;
   border-radius: 50px;
-  background: #fff;
+  background: #e9e9eb;
   box-shadow: 0 9px 28px -6px rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
 }
 .toggle.checked:before {
-  background: #e9e9eb;
+  background: #e91e63;
 }
 .toggle.checked:after {
   left: 22px;
