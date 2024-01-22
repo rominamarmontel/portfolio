@@ -122,7 +122,10 @@
 	-webkit-transition:	all 0.2s ease;
 	transition:		all 0.2s ease;
 }
-@media screen and (max-width: 992px) {
+
+
+/*タブレット*/
+@media screen and (max-width: 1024px) {
   .Works {
     padding-bottom: unset;
   }
@@ -136,10 +139,9 @@
     line-height: 20px;
   }
 }
-@media (max-width: 720px) {
-  
-}
-@media screen and (max-width: 510px) {
+
+/*モバイル*/
+@media screen and (max-width: 599px) {
   .worksbox {
     width: 100%;
     display: flex;

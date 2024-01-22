@@ -25,7 +25,9 @@ const Home = () => {
         <section id='works'>
           <Works />
         </section>
-        <Contact />
+        <section id='contact'>
+          <Contact />
+        </section>
       </div>
       <ScrollToTop />
     </div>

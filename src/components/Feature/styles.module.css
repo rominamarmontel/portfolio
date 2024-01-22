@@ -98,7 +98,9 @@
 .delay6 {
   animation-delay: 1.8s; 
 }
-@media screen and (max-width: 960px) {
+
+/*タブレット*/
+@media screen and (max-width: 1024px) {
   .Feature {
     padding-top: unset;
     padding-bottom: 50px !important;
@@ -109,14 +111,16 @@
   }
   .title h3 {
     margin-bottom: 0;
-    line-height: 1rem;
+    padding: 36px 0;
   }
   .competence {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
   }
-  .competence_image img{
+  .competence_image img {
     width: 100%;
-    height: 340px;
+    height: 500px;
   }
   .feature_container {
     display: flex;
@@ -141,8 +145,9 @@
   }
 
 }
-@media (max-width: 720px) {}
-@media screen and (max-width: 510px) {
+
+/*モバイル*/
+@media screen and (max-width: 599px) {
   .layer {
     width: 90%;
     margin: 0 auto;
@@ -153,6 +158,10 @@
   .competence {
     flex-direction: column;
     margin-right: unset;
+  }
+  .competence_image img {
+    width: 100%;
+    height: 350px;
   }
   .box_frontend > div, .box_backend > div {
     border: 1px solid #d5d8db;

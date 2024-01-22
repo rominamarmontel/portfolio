@@ -122,16 +122,16 @@ h3 {
 ul {
   list-style: none;
 }
-Link {
-  text-decoration: none;
+a, Link {
+  text-decoration: none !important;
   cursor: pointer;
-  color: inherit;
+  color: black !important;
 }
 
 /* ------------------------------------ header ------------------------------------ */
 header {
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   transition: transform 2s ease-in-out;
 }
@@ -498,15 +498,11 @@ footer {
 }
 
 /* ------------------------------------ Responsive ------------------------------------ */
-@media screen and (max-width: 960px) {
-  /*  header  */
-.header_ul a {
-  line-height: 40px;
-  font-size: 30px;
-}
-.header_ul.is-animation a {
-	font-size: 20px;
-  line-height: 20px;
+/*タブレット*/
+@media screen and (max-width: 1024px) {
+/*  header  */
+.header_ul {
+  display: none;
 }
 .top {
   width: 100%;
@@ -552,12 +548,12 @@ footer {
 .text-on-image {
   max-width: unset;
   bottom: 50%;
-  left: 35%;
+  left: 25%;
   z-index: 1;
 }
-.text-on-image img {
-  width: 250px;
-}
+
+/* hamburger Menu */
+
 /* banner */
 .banner {
   position: absolute;
@@ -582,36 +578,37 @@ footer {
   width: 100%;
 }
 }
-@media only screen and (min-width: 600px)  {
+
+/*モバイル*/
+@media screen and (max-width: 599px) {
+/*  header  */
+.header_ul {
+  display: none;
 }
-@media screen and (max-width: 510px) {
-  header {
-    display: none;
-  }
-  .top {
-    width: 100%;
-    height: 100vh;
-    padding-top: unset;
-    padding-bottom: unset;
-  }
-  /* image */
-  .image-container {
-    width: 100%;
-    height: 90vh;
-  }
-  .image-container::before {
-    display: block;
-    padding-top: 50%;
-    content: '';
-  }
-  .image-container img {
-    display: block;
-    width: auto;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.top {
+  width: 100%;
+  height: 100vh;
+  padding-top: unset;
+  padding-bottom: unset;
+}
+/* image */
+.image-container {
+  width: 100%;
+  height: 90vh;
+}
+.image-container::before {
+  display: block;
+  padding-top: 50%;
+  content: '';
+}
+.image-container img {
+  display: block;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /* text-on-image */
 .text-on-image {
   max-width: unset;

@@ -43,18 +43,10 @@
   opacity: 1;
   transform: translateY(0);
 }
-/* @keyframes catch_anime {
-  0% {
-    transform: translateY(20px);
-  }
-   100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
 
 /* ------------------------------------ Responsive ------------------------------------ */
-@media screen and (max-width: 992px) {
+/*タブレット*/
+@media screen and (max-width: 1024px) {
   .About {
     width: 100%;
     padding-top: 100px;
@@ -67,7 +59,7 @@
   }
   .aboutImage img {
     width: 100%;
-    height: 100%;
+    height: 500px;
   }
   .layerText {
     flex-direction: column;
@@ -81,11 +73,12 @@
   }
   .description p {
     width: 100% !important;
-    padding: 36px 0 0 0;
+    padding: 36px 0;
     padding-top: 36px !important;
   }
 }
-@media screen and (max-width: 510px) {
+/*モバイル*/
+@media screen and (max-width: 599px) {
   .About {
     padding-top: unset;
     padding-bottom: unset;
