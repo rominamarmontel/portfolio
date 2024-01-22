@@ -49,7 +49,8 @@ const Header = () => {
           <li><p>{isEnglish ? 'FULL-STACK WEB DEVELOPER' : 'WEB DÉVELOPPEUSE FULL-STACK'}</p></li>
         </HashLink>
       </ul>
-      {window.innerWidth <= 992 && (
+
+      {/* {window.innerWidth <= 960 && (
         <>
           <ToggleButton
             open={open}
@@ -59,7 +60,7 @@ const Header = () => {
           />
           <Navigation id="navigation" open={open} />
         </>
-      )}
+      )} */}
     </div>
   )
 }
