@@ -39,7 +39,8 @@ const History = () => {
             </div>
             <div className={`${styles.school} ${styles.fadeIn}`} ref={aboutRef}>
               <div className={styles.description}>
-                <p ><span className={styles.bold}>{isEnglish ? 'Web Developer Full-Stack' : 'Développeur Web Full-Stack'}</span>
+                <p >
+                  <span className={styles.bold}>{isEnglish ? 'Web Developer Full-Stack' : 'Développeur Web Full-Stack'}</span>
                   <br />
                   <span className={styles.italic}>@IRONHACK PARIS,
                     Jan/2023-Mar/2023</span>

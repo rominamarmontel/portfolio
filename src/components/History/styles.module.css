@@ -59,16 +59,17 @@
     width: 100%;
     height: 500px;
   }
-  .school {
-    flex-direction: column;
-    gap: unset !important;
-  }
 }
 
 /*モバイル*/
 @media screen and (max-width: 599px) {
+  .school {
+    flex-direction: column;
+    gap: 2rem;
+  }
   .historyImage img {
     width: 100%;
     height: 350px;
   }
+  
 }
