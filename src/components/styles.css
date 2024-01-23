@@ -1,122 +1,8 @@
-/*モバイル*/
-@media screen and (max-width: 599px) {
-  .hamburgerMenu-section {
-  width: 100%;
-  padding: 5px;
-  display: flex;
-  justify-content: flex-end;
-  z-index: 3;
-}
-button {
-  appearance: none;
-  border: none;
-  background: transparent;
-  outline: none;
-  border-radius: 0;
-  letter-spacing: inherit;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  cursor: pointer;
-}
-.hamburger {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0rem;
-  z-index: 999;
-  height: auto;
-}
-.toggleButon {
-  position: relative;
-  width: 36px;
-  height: 36px;
-  overflow: hidden;
-  z-index: 3;
-  border: 1px solid var(--color-primary-light);
-}
-.toggleButon > span {
-  position: absolute;
-  top: 0px;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  display: inline-block;
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-primary-light);
-}
-
-.line-1 {
-  transform: translate(0, -10px);
-}
-
-.line-2 {
-  transform: translate(0, 10px);
-}
-
-.toggleButon[aria-expanded="true"] > .line-1 {
-  transform: translate(0, 0) rotate(-45deg);
-}
-
-.toggleButon[aria-expanded="true"] > .line-2 {
-  transform: translate(0, 0) rotate(45deg);
-}
-
-.navigation {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 5rem 2rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-  background-color: white;
-}
-.navigation[aria-hidden="false"] {
-  display: flex;
-  /* position: relative; */
-}
-p {
-  margin-bottom: 0 !important;
-  font-size: 13px;
-}
-.logo_image img{
-  width: 100px;
-  margin-left: 100px;
-  position: absolute;
-  left: -10vw;
-}
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.navigation .menu > ul {
-  display: flex;
-  align-items: flex-start;
-  justify-content: left;
-  flex-direction: column;
-  gap: unset !important;
-  width: 100%;
-}
-.navigation > ul > li {
-  text-align: center;
-}
-.navigation > ul > a {
-  width: 100%;
-  text-decoration: none !important;
-  color: black;
-}
-}
-
 /*タブレット*/
 @media screen and (max-width: 1024px) {
   .hamburgerMenu-section {
     width: 100%;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     justify-content: flex-end;
     z-index: 3;
@@ -131,98 +17,115 @@ p {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     cursor: pointer;
   }
-  .hamburger {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0rem;
-    z-index: 999;
-    height: auto;
-  }
+  
   .toggleButon {
     position: relative;
     width: 36px;
     height: 36px;
     overflow: hidden;
     z-index: 3;
+    background-color: black !important;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding: 3px;
+  }
+  .toggleButon buton {
+    background-color: black;
   }
   .toggleButon > span {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
     display: inline-block;
-    width: 100%;
+    width: 50%;
     height: 2px;
-    background-color: var(--color-primary-light);
-    text-shadow: 1px 1px 2px white;
+   background-color: white;
   }
-  
+  /*width of each line */
   .line-1 {
-    transform: translate(0, -10px);
+    transform: translate(0, -5px);
   }
-  
   .line-2 {
-    transform: translate(0, 10px);
+    transform: translate(0, 0px);
   }
-  
+  .line-3 {
+    transform: translate(0, 5px);
+  }
   .toggleButon[aria-expanded="true"] > .line-1 {
     transform: translate(0, 0) rotate(-45deg);
   }
-  
   .toggleButon[aria-expanded="true"] > .line-2 {
     transform: translate(0, 0) rotate(45deg);
   }
-  
+  .toggleButon[aria-expanded="true"] > .line-3 {
+    display: none;
+  }
+  /*開いたメニュー*/
   .navigation {
     display: none;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 5rem 2rem;
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
     height: 100vh;
+    width: 50vw;
     background-color: white;
+    transform: translateX(-100%); 
+    transition: transform 0.5s ease;
+    z-index: 1;
   }
+  /*メニューの背景*/
   .navigation[aria-hidden="false"] {
     display: flex;
-    /* position: relative; */
+    right: 0;
+    background-color: white;
+    transform: translateX(0%);
   }
+  .navigation[aria-hidden="true"] {
+    display: flex;
+    transform: translateX(100%);
+  }
+  /*language*/
   p {
     margin-bottom: 0 !important;
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 700;
   }
-  .logo_image {
-    position: absolute;
-    top: 45vh;
-    left: 40vw;
-  }
-  .menu {
-    position: fixed;
-    top: 0;
-    left: 0;
+  /*logo*/
+  .logo_image img{
+    width: 100px;
   }
   .navigation .menu > ul {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: flex-start;
-    gap: 2rem 0;
-    position: absolute;
-    top: 30vh;
-    font-size: 1.5rem;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 1rem;
+    width: 100%;
+    margin: 3rem 0;
+    padding: 0;
+    font-size: 1rem;
     font-weight: 700;
-    white-space: nowrap
+  }
+  .navigation > ul > li {
+    text-align: center;
   }
   .navigation > ul > a {
     width: 100%;
-    text-decoration: none !important;
+    text-decoration: none;
     color: black;
+  }
+}
+/*************モバイル****************/
+@media screen and (max-width: 599px) {
+  .hamburgerMenu-section {
+    padding: 10px;
+  }
+  .navigation {
+    width: 70vw;
   }
 }

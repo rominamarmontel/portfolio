@@ -29,16 +29,17 @@ export const Navigation = ({ open, id, onClose }) => {
             </HashLink></li>
             <li><HashLink smooth to="/#works" onClick={handleLinkClick}>{isEnglish ? 'PROJECTS' : 'PROJETS'}</HashLink></li>
             <li><HashLink to="/#contact" onClick={handleLinkClick}>CONTACT</HashLink></li>
-            <li><p>{isEnglish ? 'EN' : 'FR'}</p>
-              <button onClick={toggleLanguage} className={`toggle ${isEnglish ? 'checked' : ''}`}>
-                <input type="checkbox" />
-              </button>
-            </li>
-            <div className='icons_conatiner'>
+            <li className='icons_conatiner'>
               <Link to='https://www.linkedin.com/in/hiromi-varnier/' target='_blank' className='linkedin_icons'><FaLinkedinIn /></Link>
               <Link to='https://github.com/rominamarmontel/' target='_blank' className='github_icons'><GrGithub /></Link>
-            </div>
+            </li>
           </ul>
+          <div>
+            <p>{isEnglish ? 'EN' : 'FR'}</p>
+            <button onClick={toggleLanguage} className={`toggle ${isEnglish ? 'checked' : ''}`}>
+              <input type="checkbox" />
+            </button>
+          </div>
         </div>
       </nav>
     </>
