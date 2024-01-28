@@ -40,7 +40,7 @@ const Contact = () => {
                     </Link>
                   </div>
                   <div className={styles.icons_container}>
-                    <Link to={isEnglish ? 'https://drive.google.com/file/d/1jhjNupfQv-fxvSfVKVxGbjiOa1cZMgdo/view?usp=sharing' : 'https://drive.google.com/file/d/1jhjNupfQv-fxvSfVKVxGbjiOa1cZMgdo/view?usp=sharing'} target='_blank' className={styles.circle_icons}>
+                    <Link to={isEnglish ? 'https://drive.google.com/file/d/1jhjNupfQv-fxvSfVKVxGbjiOa1cZMgdo/view?usp=sharing' : 'https://drive.google.com/file/d/1qeX4NoqEgZ8tedpb7MpwOZVeG1tooGhx/view?usp=drive_link'} target='_blank' className={styles.circle_icons}>
                       <IoDocumentText className={styles.doc_icons} />
                       <p>{isEnglish ? 'See my CV' : 'Voir mon CV'}</p>
                     </Link>
