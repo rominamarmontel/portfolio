@@ -503,6 +503,10 @@ footer {
 /* ------------------------------------ Responsive ------------------------------------ */
 /*******************タブレット******************/
 @media screen and (max-width: 1024px) {
+p {
+  font-size: 16px !important;
+  font-weight: 400;
+}
 /*  header  */
 .header_ul {
   display: none;
@@ -581,6 +585,10 @@ footer {
 
 /*************モバイル****************/
 @media screen and (max-width: 599px) {
+p {
+  font-size: 16px !important;
+  font-weight: 400;
+}
 /*  header  */
 .header_ul {
   display: none;
