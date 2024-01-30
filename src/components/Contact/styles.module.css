@@ -80,10 +80,13 @@
 .icons_container {
   width: 100%;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   text-decoration: none;
   color: inherit;
   margin-top: 15px;
+}
+.icons_container p {
+  margin-bottom: unset !important;
 }
 .descriptionA, .descriptionB {
   flex-grow: 1;
