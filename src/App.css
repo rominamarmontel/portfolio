@@ -136,7 +136,7 @@ header {
   z-index: 4;
   position: fixed;
   transition: transform 2s ease-in-out;
-  pointer-events: none
+  /* pointer-events: none */
 }
 .header_container {
   width: 100%;
